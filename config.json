@@ -11,9 +11,9 @@
             "secreatKey": ""
         },
         "developer": {
-            "streamID": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-            "clientId": "cs-9187e6e8-9372-5e28-aa5f-dfa4b2ecc5ec",
-            "secreatKey": "a9lEPCLMYxjat8lfwgAdTSR5JSLDZxhYlQBdKl5bH64=",
+             "streamID": "",
+            "clientId": "",
+            "secreatKey": "",
             "version":"1.1",
             "host":"bots.kore.ai"
         }
