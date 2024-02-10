@@ -32,6 +32,43 @@ Before running the debugger, ensure you have the latest environment and content 
     - Ensure that `script.debug();` is not commented out in `debugger.js`.
     - Run the command `node debugger.js` in your terminal.
 
+
+
+# Systematic Debugging Approach
+
+## Overview
+
+This document outlines a systematic approach to debugging script nodes within the "Get Account Balance" dialog. Following these steps can help identify and resolve issues efficiently.
+
+## Steps to Debugging
+
+1. **Identify the Issue:**
+   - Pinpoint the script node that is failing within the "Get Account Balance" dialog.
+
+2. **Execute the Bot:**
+   - Run the bot with any utterance that qualifies for getting the balance.
+
+3. **Analyze the Failure:**
+   - Once the bot is executed and the issue occurs, analyze which script node is failing.
+
+4. **Copy Failed Node's Script and Context:**
+   - Copy the script from the failed node and the immediate context before the node.
+
+5. **Paste Context in JSON Format:**
+   - Paste the copied context into a JSON format for reference.
+
+6. **Debug Script:**
+   - Paste the script into the debug function and ensure that you have added debugger points in the script.
+
+7. **Start Debugging:**
+   - Begin debugging by running the debugger. You can use `debugger.log` as the starting file.
+
+## Important Considerations
+
+- Pay close attention to variables, conditions, and the flow of the script to identify the root cause of the issue efficiently.
+- Document any observations or findings during the debugging process for future reference.
+
+
 ## Example Configuration (config.json)
 
 ```json
