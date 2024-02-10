@@ -1,9 +1,3 @@
-"# ScriptDebugger" 
-# ScriptDebugger
-
-
-"# Basic config.json" 
-" 
 {
     "env": {
         "prod": {
@@ -24,6 +18,4 @@
             "host":"bots.kore.ai"
         }
     }
-} 
-"
-
+}
