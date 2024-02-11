@@ -1,1879 +1,2331 @@
 {
-    "title": " ",
-    "body": "",
-    "updatedContext": {
-      "bot": "Banking Virtual Assistant",
-      "botid": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-      "taskid": "dg-9f9bc491-b3a4-5f49-a2b0-d046e0d873d0",
-      "intent": "Get Account Balance",
-      "intentType": "dialog",
-      "invocationSource": {
-        "type": "userInputMatch"
-      },
-      "entities": {},
-      "entityErrorCount": {},
-      "amendEntities": {},
-      "history": [],
-      "session": {
-        "EnterpriseContext": {},
-        "BotContext": {
-          "usercount": 1
-        },
-        "UserContext": {
-          "workinghours": {
-            "workdays": "mon,tue,wed,thu,fri",
-            "workstart": "8:00 AM",
-            "workend": "5:00 PM"
-          },
-          "profImage": "no-avatar",
-          "jTitle": "",
-          "dept": "",
-          "profColour": "#ff0000",
-          "activationStatus": "active",
-          "emailId": "ganesh.nethula@kore.com",
-          "firstName": "Ganesh",
-          "lastName": "n",
-          "orgId": "o-fe3e71b2-0453-52ea-9c95-50ed5660f886",
-          "_id": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-          "customData": null,
-          "accountId": "587885e8ad6795fd2ecfe372",
-          "identities": [
-            {
-              "val": "ganesh.nethula@kore.com",
-              "type": "email"
-            },
-            {
-              "val": "630dfbeb9b64f063c02e4442/smartassist/63b2914c94360546fbc71ee1",
-              "type": "mapped"
-            },
-            {
-              "val": "630dfbeb9b64f063c02e4442/smartassist/63b2918dbe5e63c018dde8bd",
-              "type": "mapped"
-            }
-          ]
-        },
-        "UserSession": {
-          "loginStatus": "success",
-          "accessToken": "Sm9objoxMTEx",
-          "customerID": "John",
-          "userRemoteAddress": "49.37.135.70"
-        },
-        "BotUserSession": {
-          "authApiPath": "https://demodpd.kore.ai/korebankingtesting/",
-          "mobileNumber": 919832321234,
-          "correlationid": 527389,
-          "devLogin": true,
-          "productCodeDetails": [
-            {
-              "acc": "Checking",
-              "sub": "Regular Checking",
-              "code": "1"
-            }
-          ],
-          "channelType": null,
-          "isIVR": null,
-          "tenantId": null,
-          "source": "kore",
-          "_metaInfo": {},
-          "firstName": "John",
-          "sessionStartTime": 1707587285595,
-          "lastName": "Jones",
-          "intentNotFoundCount": null,
-          "apiPath": "https://demodpd.kore.ai/korebankingtesting/",
-          "loginTimestamp": 1707587304051,
-          "customerID": 1045300,
-          "accessToken": "Sm9objoxMTEx",
-          "loginStatus": "success",
-          "tagEmitted": true,
-          "isReturningUser": true,
-          "authType": "Basic",
-          "prodDetails": "{\"productCodes\":[{\"acc\":\"Checking\",\"sub\":\"Regular Checking\",\"code\":\"1\"}]}",
-          "previousSubIntent": [
-            "BAL"
-          ],
-          "lastMessage": {
-            "channel": "rtm",
-            "messagePayload": {
-              "clientMessageId": 1707587302774,
-              "message": {
-                "body": "1111"
-              },
-              "resourceid": "/bot.message",
-              "isDebugging": true,
-              "botInfo": {
-                "chatBot": "Banking Virtual Assistant",
-                "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-                "botType": "default",
-                "hostDomain": "https://bots.kore.ai",
-                "os": "Windows",
-                "device": "Other"
-              },
-              "client": "botbuilder",
-              "meta": {
-                "timezone": "Asia/Kolkata",
-                "locale": "en-US",
-                "location": {
-                  "city": "",
-                  "country": "",
-                  "latitude": 17.4456832,
-                  "longitude": 78.364672,
-                  "street": ""
-                }
-              },
-              "id": 1707587302774
-            }
-          },
-          "customerName": "John",
-          "subIntent": "BAL",
-          "vendor": {},
-          "subsource": "kore",
-          "ubBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-          "client": "kore",
-          "accountId": "12345678",
-          "usecase": "Get Account Balance",
-          "bankBaseURL": null,
-          "isPhoneIdWebLogin": "false",
-          "ubUserId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-          "IntentCode": "ID_bal",
-          "useCase": "Get Account Balance",
-          "isDemo": false,
-          "inputAccount": true,
-          "channels": [
-            {
-              "type": "rtm",
-              "from": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-              "botInfo": {
-                "chatBot": "Banking Virtual Assistant",
-                "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-                "botType": "default",
-                "hostDomain": "https://bots.kore.ai",
-                "os": "Windows",
-                "device": "Other"
-              },
-              "handle": {
-                "handleId": "9edfba87-95a6-4da4-80e2-ede97b131dce",
-                "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-                "clientId": "5a37bf24-fea0-4e6b-a816-f9602db08149",
-                "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-                "traceId": "f852175b4a0f5058",
-                "spanId": "f852175b4a0f5058",
-                "trace": {}
-              },
-              "client": "botbuilder",
-              "body": "1111",
-              "enable": true,
-              "isAlertsEnabled": false,
-              "message": "The bot is disabled via Web/Mobile Client. You can still talk to the bot via Web/Mobile Client, Webhook, Ivr Inst F 7766542 C 2 A 8 568 E 8686 20067 Fc 3 B 713, Ivr Inst Dd 53 D 961 Da 1 E 516 B 9692 C 0 Ff 57978 D 3 E, AudioCodes.",
-              "activeChannels": "Web/Mobile Client,Webhook,Ivr Inst F 7766542 C 2 A 8 568 E 8686 20067 Fc 3 B 713,Ivr Inst Dd 53 D 961 Da 1 E 516 B 9692 C 0 Ff 57978 D 3 E,AudioCodes.",
-              "streamId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-              "tokens": [],
-              "__userInputTime": "2024-02-10T17:48:22.997Z",
-              "__loopCount": 0,
-              "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-              "requestId": "ms-d034c85b-df03-53ad-bf14-ed41faabc31b",
-              "botLanguage": "en",
-              "requestContext": {
-                "isRuntime": true,
-                "isBB": true
-              },
-              "sessionId": "65c7b6d4bc89f3530c4625a2"
-            }
-          ],
-          "lastUserMessageTime": "2024-02-10T17:48:23.051Z",
-          "koreApiPath": "https://demodpd.kore.ai/korebankingtesting/",
-          "conversationSessionId": "65c7b6d4bc89f3530c4625a2",
-          "externalAccountsEnabled": false
-        },
-        "opts": {
-          "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
-          "streamId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8"
-        },
-        "deleteKeys": {}
-      },
-      "updatedOn": "2024-02-10T17:48:28.498Z",
-      "intentName": "Get_Account_Balance",
-      "currentNodeId": "script189",
-      "currentNodeName": "accountValidation_GAB",
-      "currentLanguage": "en",
-      "suggestedLanguages": [
-        "da"
+  "title": " ",
+  "body": "",
+  "updatedContext": {
+    "bot": "Banking Virtual Assistant",
+    "botid": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+    "taskid": "dg-5cbb8ee4-b1b1-59e5-b718-1d75763a2054",
+    "intent": "Get Accounts and Card Limits",
+    "intentType": "dialog",
+    "invocationSource": {
+      "type": "userInputMatch"
+    },
+    "entities": {
+      "ATM": "ATM",
+      "CardSelection": "Debit",
+      "limitPeriod": "Daily",
+      "limitFields": "availableCash",
+      "captureCheckCard": "Check Card",
+      "AccountType": [
+        "1042345"
       ],
-      "onHoldTasks": [],
-      "currentTraits": [],
-      "currentTags": {
-        "tags": [
-          "Get Account Balance",
-          "Get_Account_Balance",
-          "Logmein",
-          "Capture Account Data",
-          "captureAccountData"
-        ]
-      },
-      "NLAnalysis": {
-        "userInput": "1111",
-        "intents": {
-          "successIntents": [
-            {
-              "identifyingEngine": "ML",
-              "intent": "Get Account Transactions",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0.71,
-              "rr": 71,
-              "matchType": "possible"
-            },
-            {
-              "identifyingEngine": "ML",
-              "intent": "Get Account Information",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0.71,
-              "rr": 71,
-              "matchType": "possible"
-            },
-            {
-              "identifyingEngine": "ML",
-              "intent": "Get Account Number",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0.711,
-              "rr": 71.1,
-              "matchType": "possible"
-            }
-          ],
-          "eliminatedIntents": [
-            {
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Setup Savings Goal",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Get Account Nickname",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Get Account Balance",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Make Transfers or Payments",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Get Account Opening Date",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Get Interest Rate",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            },
-            {
-              "intent": "Get Maturity Date for Accounts",
-              "type": "dialogTask",
-              "fm": 0,
-              "ml": 0,
-              "rr": 0
-            }
-          ],
-          "nerInfo": []
-        }
-      },
-      "traversedIntents": [
-        {
-          "name": "Get Account Balance",
-          "dialogId": "dg-9f9bc491-b3a4-5f49-a2b0-d046e0d873d0"
-        },
-        {
-          "name": "Capture Account Data",
-          "dialogId": "dg-567b8a36-8436-5481-9079-fb0f1aa5abde"
-        }
-      ],
-      "endOfTask": {
-        "endOfTaskReason": "Fulfilled_ParentDialog_Resumed",
-        "intentType": "dialog",
-        "taskName": "Capture Account Data",
-        "lastNode": "script17",
-        "lastNodeName": "accountFilteration"
-      },
-      "traits": [
-        "depositaccount",
-        "account",
-        "checktransaction",
-        "balancecheck"
-      ],
-      "historicTags": [
-        {
-          "tags": [
-            "Welcome Dialog",
-            "BotNotifications"
-          ]
-        }
-      ],
-      "ccId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd:st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
-      "previousNodeId": "entity183",
-      "previousNodeName": "primaryOrSupplementary",
-      "contextId": "dcx-53591245-b8e0-51ac-925f-a49c9c584952",
-      "faqResponse": false,
-      "taskNotSupported": false,
-      "intime": 1707587292988,
-      "currency": "USD",
-      "isSavePIN": true,
-      "currentFlow": true,
-      "balNotAccessible": false,
-      "fdbkFlag": false,
-      "fdbkObj": {
-        "BAL_INQ": false
-      },
-      "accountData": [
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Credit Card",
-          "accountNickname": "Rewards Card",
-          "accountNumber": "1045301",
-          "accountType": "Credit Card",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 8547.43,
-          "currentBalance": null,
-          "minimumBalance": null,
-          "creditLimit": 10000,
-          "statementDate": "01/21/2024",
-          "activatedDate": "01-01-2010",
-          "deactivatedDate": "",
-          "lastUpdated": "01-08-2019",
-          "image": "",
-          "availableCredit": 1452.57,
-          "unbilledAmount": 5698.17,
-          "dueAmount": 7500,
-          "dueDate": "02/25/2024",
-          "cardNumber": "1234456778901234",
-          "minimumPaymentDue": 300,
-          "rewardPoints": 123,
-          "expiryDate": "01-01-2025",
-          "availableCash": 200,
-          "personalBankerName": "",
-          "maxTransactionLimit": null,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "Primary",
-          "cardNetwork": "Visa",
-          "cardName": "American Express Platinum",
-          "P2PLimit": null,
-          "CardStatus": "active",
-          "routingNumber": 122235821,
-          "availableCashLimit": 1000,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "",
-          "productCode": "CC01",
-          "totalBalance": 13198.17,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "161 River Marsh Dr, Ponte Vedra Beach, Florida, 32082",
-          "email": "test13@gmail.com",
-          "phone": 14085040880,
-          "expDate": "0125",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "cardChannelInfo": {
-            "ATM": {
-              "enable": false,
-              "limit": 20000
-            },
-            "offline": {
-              "enable": true,
-              "limit": 20000
-            },
-            "international": {
-              "enable": false,
-              "limit": 100000
-            },
-            "online": {
-              "enable": false,
-              "limit": 20000
-            },
-            "contactless": {
-              "enable": true,
-              "limit": 20000
-            }
-          },
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": 1523,
-          "iban": "",
-          "holdingType": "",
-          "openingDate": "04-23-2002",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "4b93e723d29cfa66",
-          "displayAccountNumber": "1045301",
-          "displayAccountType": "Credit Card",
-          "displayCardType": "Primary",
-          "displayCardStatus": "",
-          "cardImage": "",
-          "displayLastFour": "5301",
-          "displayNumber": "XXX5301",
-          "cardKind": "Credit Card",
-          "label": "Credit Card - 1234",
-          "nicknameLabel": "Rewards Card - 5301",
-          "synonym": [
-            "\"1234456778901234\"",
-            "\"1234 4567 7890 1234\"",
-            "\"~creditcard\"",
-            "'Credit Card'",
-            "\"rewards card\"",
-            "\"Rewards Card - 5301\"",
-            "\"Credit Card - 1234\"",
-            "\"American Express Platinum\"",
-            "american express platinum",
-            "rewards",
-            "\"american express\"",
-            "\"american platinum\"",
-            "\"express platinum\"",
-            "\"1045301\"",
-            "\"5301\"",
-            "\"1234\"",
-            "\"~creditcardsynonyms\"",
-            "\"~creditaccount\""
-          ],
-          "synonym_names": [
-            "'Credit Card'",
-            "\"rewards card\"",
-            "\"Rewards Card - 5301\"",
-            "\"Credit Card - 1234\"",
-            "\"American Express Platinum\"",
-            "american express platinum",
-            "rewards",
-            "\"american express\"",
-            "\"american platinum\"",
-            "\"express platinum\""
-          ],
-          "synonym_numbers": [
-            "\"1045301\"",
-            "\"5301\"",
-            "\"1234\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Checking Account",
-          "accountNickname": "Joint",
-          "accountNumber": "1042345",
-          "accountType": "Checking Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 6423.01,
-          "currentBalance": null,
-          "minimumBalance": 1300,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "03-01-2010",
-          "deactivatedDate": "",
-          "lastUpdated": "01-08-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": "1234456778901690",
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "01-01-2025",
-          "availableCash": 1000,
-          "personalBankerName": "",
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "Primary",
-          "cardNetwork": "",
-          "cardName": "",
-          "P2PLimit": 7000,
-          "CardStatus": "active",
-          "routingNumber": 121122676,
-          "availableCashLimit": 1000,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Basic Checking\"",
-          "productCode": "BC06",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "1234 Main street, New York, 32819",
-          "email": "test14@gmail.com",
-          "phone": 14085040880,
-          "expDate": "0125",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "cardChannelInfo": {
-            "ATM": {
-              "enable": false,
-              "limit": 20000
-            },
-            "offline": {
-              "enable": true,
-              "limit": 20000
-            },
-            "international": {
-              "enable": false,
-              "limit": 100000
-            },
-            "online": {
-              "enable": false,
-              "limit": 20000
-            },
-            "contactless": {
-              "enable": true,
-              "limit": 20000
-            }
-          },
-          "currentPeriodRewardPoints": 5500,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143145",
-          "chequeBookDetails": {
-            "enabled": false
-          },
-          "holdingType": "",
-          "openingDate": "03-23-2001",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "ea8e220471f5b842",
-          "displayAccountType": "Checking Account",
-          "displayNumber": "XXX2345",
-          "displayLastFour": "2345",
-          "displayStatus": "active",
-          "label": "Checking Account - 2345",
-          "nicknameLabel": "Joint - 2345",
-          "synonym": [
-            "\"Joint - 2345\"",
-            "\"Checking Account - 2345\"",
-            "\"Checking Account\"",
-            "\"joint\"",
-            "\"Basic Checking\"",
-            "joint",
-            "\"1042345\"",
-            "\"2345\"",
-            "\"1234456778901690\"",
-            "\"1234 4567 7890 1690\"",
-            "\"1690\"",
-            "\"~checkingaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Joint - 2345\"",
-            "\"Checking Account - 2345\"",
-            "\"Checking Account\"",
-            "\"joint\"",
-            "\"Basic Checking\"",
-            "joint"
-          ],
-          "synonym_numbers": [
-            "\"1042345\"",
-            "\"2345\"",
-            "\"1234456778901690\"",
-            "\"1234 4567 7890 1690\"",
-            "\"1690\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Savings Account",
-          "accountNickname": "Vacation Fund",
-          "accountNumber": "1043693",
-          "accountType": "Savings Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 2256.93,
-          "currentBalance": 20,
-          "minimumBalance": 1500,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "01-01-2011",
-          "deactivatedDate": "",
-          "lastUpdated": "01-07-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": null,
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "",
-          "availableCash": null,
-          "personalBankerName": "William Smith",
-          "personalBankerContact": {
-            "email": "William.Smith@bank.com",
-            "mobileNumber": "(904) 236-2345"
-          },
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "",
-          "cardNetwork": "Discover",
-          "cardName": "Getaway Card",
-          "P2PLimit": 300,
-          "CardStatus": "",
-          "routingNumber": 122105159,
-          "availableCashLimit": 500,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Boost Savings\"",
-          "productCode": "MS02",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "172 W Flagler Street, Miami, Florida, 33130",
-          "email": "test12@gmail.com",
-          "phone": 14085040880,
-          "expDate": "",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143144",
-          "holdingType": "",
-          "openingDate": "02-24-2000",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "3284c44694d2a97f",
-          "displayAccountType": "Savings Account",
-          "displayNumber": "XXX3693",
-          "displayLastFour": "3693",
-          "displayStatus": "active",
-          "label": "Savings Account - 3693",
-          "nicknameLabel": "Vacation Fund - 3693",
-          "synonym": [
-            "\"Vacation Fund - 3693\"",
-            "\"Savings Account - 3693\"",
-            "\"Savings Account\"",
-            "\"vacation fund\"",
-            "\"Boost Savings\"",
-            "getaway",
-            "vacation fund",
-            "\"1043693\"",
-            "\"3693\"",
-            "\"~savingsaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Vacation Fund - 3693\"",
-            "\"Savings Account - 3693\"",
-            "\"Savings Account\"",
-            "\"vacation fund\"",
-            "\"Boost Savings\"",
-            "getaway",
-            "vacation fund"
-          ],
-          "synonym_numbers": [
-            "\"1043693\"",
-            "\"3693\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Savings Account",
-          "accountNickname": "Joint with Son",
-          "accountNumber": "1042222",
-          "accountType": "Savings Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 5649.65,
-          "currentBalance": 20,
-          "minimumBalance": 1500,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "01-01-2011",
-          "deactivatedDate": "",
-          "lastUpdated": "01-07-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": null,
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "",
-          "availableCash": null,
-          "personalBankerName": "William Smith",
-          "personalBankerContact": {
-            "email": "William.Smith@bank.com",
-            "mobileNumber": "(904) 236-2345"
-          },
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "",
-          "cardNetwork": "Discover",
-          "cardName": "Getaway Card",
-          "P2PLimit": 450,
-          "CardStatus": "",
-          "routingNumber": 122105155,
-          "availableCashLimit": 1500,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Basic Savings\"",
-          "productCode": "BS03",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "1320 Park avenue, Orlando, Florida, 76656",
-          "email": "testing11@gmail.com",
-          "phone": 14085040880,
-          "expDate": "",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143143",
-          "holdingType": "",
-          "openingDate": "01-23-2000",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "272939d260813892",
-          "displayAccountType": "Savings Account",
-          "displayNumber": "XXX2222",
-          "displayLastFour": "2222",
-          "displayStatus": "active",
-          "label": "Savings Account - 2222",
-          "nicknameLabel": "Joint with Son - 2222",
-          "synonym": [
-            "\"Joint with Son - 2222\"",
-            "\"Savings Account - 2222\"",
-            "\"Savings Account\"",
-            "\"joint with son\"",
-            "\"Basic Savings\"",
-            "getaway",
-            "joint with son",
-            "\"1042222\"",
-            "\"2222\"",
-            "\"~savingsaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Joint with Son - 2222\"",
-            "\"Savings Account - 2222\"",
-            "\"Savings Account\"",
-            "\"joint with son\"",
-            "\"Basic Savings\"",
-            "getaway",
-            "joint with son"
-          ],
-          "synonym_numbers": [
-            "\"1042222\"",
-            "\"2222\""
-          ]
-        }
-      ],
-      "fields": [
-        {
-          "name": "Available Balance",
-          "value": "availableBalance",
-          "synonyms": [
-            "\"~balance\""
-          ],
-          "label": "available balance",
-          "contentVariable": "balanceMessage",
-          "label_plural": "available balances"
-        },
-        {
-          "name": "Posted Balance",
-          "value": "postedBalance",
-          "synonyms": [
-            "\"~postedBalance\""
-          ],
-          "availability": [
-            "Savings Account",
-            "Checking Account"
-          ],
-          "label": "posted balance",
-          "contentVariable": "postedBalance",
-          "label_plural": "posted balances"
-        },
-        {
-          "name": "Total Balance",
-          "value": "totalBalance",
-          "synonyms": [
-            "\"~totalbalance\""
-          ],
-          "availability": [
-            "Credit Card",
-            "Line of Credit",
-            "Home Equity Line"
-          ],
-          "label": "total balance",
-          "label_plural": "total balances"
-        },
-        {
-          "name": "Original Loan Amount",
-          "value": "originalLoanAmount",
-          "synonyms": [
-            "\"~originalloanamount\""
-          ],
-          "availability": [
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan"
-          ],
-          "label": "original loan amount",
-          "contentVariable": "loanOrigination",
-          "label_plural": "original loan amounts"
-        },
-        {
-          "name": "Available Credit",
-          "value": "availableCredit",
-          "synonyms": [
-            "\"~availablecreditdraw\""
-          ],
-          "availability": [
-            "Line of Credit"
-          ],
-          "label": "available credit",
-          "contentVariable": "availableCreditMessage",
-          "label_plural": "available credits"
-        },
-        {
-          "name": "Maturity Amount",
-          "value": "maturityAmount",
-          "synonyms": [
-            "\"~maturityamount\"",
-            "\"maturity amount\"",
-            "\"maturity money\""
-          ],
-          "availability": [
-            "CD",
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan"
-          ],
-          "label": "maturity amount",
-          "contentVariable": "maturityAmountDate",
-          "label_plural": "maturity amounts"
-        },
-        {
-          "name": "PayoffAmount",
-          "value": "payoffAmount",
-          "synonyms": [
-            "\"~payoff\""
-          ],
-          "availability": [
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Home Equity Line",
-            "Personal Loan",
-            "Line of Credit"
-          ],
-          "label": "payoff amount",
-          "contentVariable": "payOffAmountDisplay",
-          "label_plural": "payoff amounts"
-        },
-        {
-          "name": "Minimum Payment Due",
-          "value": "minimumPaymentDue",
-          "synonyms": [
-            "\"~minimumpaymentdue\""
-          ],
-          "availability": [
-            "Credit Card",
-            "Line of Credit",
-            "Home Equity Line"
-          ],
-          "label": "minimum payment due",
-          "contentVariable": "minPaymentDueMessage",
-          "label_plural": "minimum payment dues"
-        },
-        {
-          "name": "Due Amount",
-          "value": "dueAmount",
-          "synonyms": [
-            "\"~dueamount\""
-          ],
-          "availability": [
-            "Credit Card",
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan"
-          ],
-          "label": "monthly payment amount",
-          "contentVariable": "balanceDueMessage",
-          "label_plural": "monthly payment amounts"
-        },
-        {
-          "name": "Due Date",
-          "value": "dueDate",
-          "synonyms": [
-            "\"~duedate\""
-          ],
-          "availability": [
-            "Credit Card",
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan"
-          ],
-          "label": "due date",
-          "contentVariable": "balanceDueMessage",
-          "label_plural": "due dates"
-        },
-        {
-          "name": "Payment Information",
-          "value": "paymentInformation",
-          "synonyms": [
-            "\"~paymentinfo\""
-          ],
-          "availability": [
-            "Credit Card",
-            "Home Equity Loan",
-            "Home Equity Line",
-            "Auto Loan",
-            "Personal Loan",
-            "Mortgage",
-            "Line of Credit"
-          ],
-          "label": "payment information",
-          "contentVariable": "cc_payment_details",
-          "label_plural": "payment information"
-        },
-        {
-          "name": "Beginning Value",
-          "value": "beginningValue",
-          "synonyms": [
-            "\"~beginningvalue\"",
-            "\"~beginningvaluebalance\""
-          ],
-          "availability": [
-            "IRA",
-            "CD"
-          ],
-          "label": "beginning value",
-          "label_plural": "beginning values",
-          "contentVariable": "beginningValue"
-        },
-        {
-          "name": "Ending Value",
-          "value": "endingValue",
-          "synonyms": [
-            "\"~endingvalue\"",
-            "\"~endingvaluebalance\""
-          ],
-          "availability": [
-            "IRA"
-          ],
-          "label": "ending value",
-          "label_plural": "ending values"
-        },
-        {
-          "name": "Value",
-          "value": "value",
-          "synonyms": [
-            "\"~value\""
-          ],
-          "availability": [
-            "IRA"
-          ],
-          "label_plural": "current values",
-          "label": "current value"
-        },
-        {
-          "name": "closingBalanceCC",
-          "value": "closingBalanceCC",
-          "synonyms": [
-            "\"~closingbalcc\""
-          ],
-          "availability": [
-            "Credit Card"
-          ],
-          "label": "since your last statement",
-          "contentVariable": "closingBalanceCCMessage",
-          "label_plural": "spends since your last statement"
-        },
-        {
-          "name": "Unbilled Amount",
-          "value": "unbilledAmount",
-          "synonyms": [
-            "\"~unbilledamount\""
-          ],
-          "availability": [
-            "Credit Card"
-          ],
-          "label": "unbilled amount",
-          "contentVariable": "unbilledAmountMessage",
-          "label_plural": "unbilled amounts"
-        },
-        {
-          "name": "Loan Maturity Date",
-          "value": "loanMaturityDate",
-          "synonyms": [
-            "\"~payoffdate\""
-          ],
-          "availability": [
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan",
-            "CD"
-          ],
-          "label": "maturity date",
-          "contentVariable": "loanPayOff",
-          "label_plural": "maturity dates"
-        },
-        {
-          "name": "Loan Originination Date",
-          "value": "loanOriginationDate",
-          "synonyms": [
-            "\"~originationdate\""
-          ],
-          "availability": [
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan"
-          ],
-          "label": "loan origination date",
-          "contentVariable": "loanOrigination",
-          "label_plural": "loan origination dates"
-        },
-        {
-          "name": "Principal Balance",
-          "value": "principalBalance",
-          "synonyms": [
-            "\"~principalbalance\"",
-            "\"~principaldepositamount\""
-          ],
-          "availability": [
-            "Auto Loan",
-            "Mortgage",
-            "Home Equity Loan",
-            "Personal Loan",
-            "Credit Card"
-          ],
-          "label": "principal balance",
-          "label_plural": "principal balances"
-        },
-        {
-          "name": "Minimum Balance",
-          "value": "minimumBalance",
-          "synonyms": [
-            "\"~minimumbalance\""
-          ],
-          "availability": [
-            "Savings Account",
-            "Checking Account"
-          ],
-          "label": "minimum balance",
-          "contentVariable": "minBalanceMessage",
-          "label_plural": "minimum balances"
-        }
-      ],
-      "fetchAccNames": {
-        "1042222": "Joint with Son - 2222",
-        "1042345": "Joint - 2345",
-        "1043693": "Vacation Fund - 3693",
-        "1045301": "Rewards Card - 5301"
-      },
-      "displayAccountTypes": {
-        "Savings Account": "Savings Account",
-        "Checking Account": "Checking Account",
-        "Credit Card": "Credit Card",
-        "Line of Credit": "Line of Credit",
-        "Home Equity Line": "Home Equity Line",
-        "Home Equity Loan": "Home Equity Loan",
-        "Auto Loan": "Auto Loan",
-        "Personal Loan": "Personal Loan",
-        "Mortgage": "Mortgage",
-        "IRA": "IRA",
-        "CD": "CD",
-        "card": "card",
-        "check card": "Debit Card",
-        "loan": "loan",
-        "line": "line",
-        "deposit": "deposit",
-        "account": "account"
-      },
-      "allowedOrNot": true,
-      "hasAccount": true,
-      "showMessage": true,
-      "accountTypes": [
-        "Credit Card",
-        "Checking Account",
-        "Savings Account"
-      ],
-      "customerAccounts": [
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Credit Card",
-          "accountNickname": "Rewards Card",
-          "accountNumber": "1045301",
-          "accountType": "Credit Card",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 8547.43,
-          "currentBalance": null,
-          "minimumBalance": null,
-          "creditLimit": 10000,
-          "statementDate": "01/21/2024",
-          "activatedDate": "01-01-2010",
-          "deactivatedDate": "",
-          "lastUpdated": "01-08-2019",
-          "image": "",
-          "availableCredit": 1452.57,
-          "unbilledAmount": 5698.17,
-          "dueAmount": 7500,
-          "dueDate": "02/25/2024",
-          "cardNumber": "1234456778901234",
-          "minimumPaymentDue": 300,
-          "rewardPoints": 123,
-          "expiryDate": "01-01-2025",
-          "availableCash": 200,
-          "personalBankerName": "",
-          "maxTransactionLimit": null,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "Primary",
-          "cardNetwork": "Visa",
-          "cardName": "American Express Platinum",
-          "P2PLimit": null,
-          "CardStatus": "active",
-          "routingNumber": 122235821,
-          "availableCashLimit": 1000,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "",
-          "productCode": "CC01",
-          "totalBalance": 13198.17,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "161 River Marsh Dr, Ponte Vedra Beach, Florida, 32082",
-          "email": "test13@gmail.com",
-          "phone": 14085040880,
-          "expDate": "0125",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "cardChannelInfo": {
-            "ATM": {
-              "enable": false,
-              "limit": 20000
-            },
-            "offline": {
-              "enable": true,
-              "limit": 20000
-            },
-            "international": {
-              "enable": false,
-              "limit": 100000
-            },
-            "online": {
-              "enable": false,
-              "limit": 20000
-            },
-            "contactless": {
-              "enable": true,
-              "limit": 20000
-            }
-          },
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": 1523,
-          "iban": "",
-          "holdingType": "",
-          "openingDate": "04-23-2002",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "4b93e723d29cfa66",
-          "displayAccountNumber": "1045301",
-          "displayAccountType": "Credit Card",
-          "displayCardType": "Primary",
-          "displayCardStatus": "",
-          "cardImage": "",
-          "displayLastFour": "5301",
-          "displayNumber": "XXX5301",
-          "cardKind": "Credit Card",
-          "label": "Credit Card - 1234",
-          "nicknameLabel": "Rewards Card - 5301",
-          "synonym": [
-            "\"1234456778901234\"",
-            "\"1234 4567 7890 1234\"",
-            "\"~creditcard\"",
-            "'Credit Card'",
-            "\"rewards card\"",
-            "\"Rewards Card - 5301\"",
-            "\"Credit Card - 1234\"",
-            "\"American Express Platinum\"",
-            "american express platinum",
-            "rewards",
-            "\"american express\"",
-            "\"american platinum\"",
-            "\"express platinum\"",
-            "\"1045301\"",
-            "\"5301\"",
-            "\"1234\"",
-            "\"~creditcardsynonyms\"",
-            "\"~creditaccount\""
-          ],
-          "synonym_names": [
-            "'Credit Card'",
-            "\"rewards card\"",
-            "\"Rewards Card - 5301\"",
-            "\"Credit Card - 1234\"",
-            "\"American Express Platinum\"",
-            "american express platinum",
-            "rewards",
-            "\"american express\"",
-            "\"american platinum\"",
-            "\"express platinum\""
-          ],
-          "synonym_numbers": [
-            "\"1045301\"",
-            "\"5301\"",
-            "\"1234\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Checking Account",
-          "accountNickname": "Joint",
-          "accountNumber": "1042345",
-          "accountType": "Checking Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 6423.01,
-          "currentBalance": null,
-          "minimumBalance": 1300,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "03-01-2010",
-          "deactivatedDate": "",
-          "lastUpdated": "01-08-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": "1234456778901690",
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "01-01-2025",
-          "availableCash": 1000,
-          "personalBankerName": "",
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "Primary",
-          "cardNetwork": "",
-          "cardName": "",
-          "P2PLimit": 7000,
-          "CardStatus": "active",
-          "routingNumber": 121122676,
-          "availableCashLimit": 1000,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Basic Checking\"",
-          "productCode": "BC06",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "1234 Main street, New York, 32819",
-          "email": "test14@gmail.com",
-          "phone": 14085040880,
-          "expDate": "0125",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "cardChannelInfo": {
-            "ATM": {
-              "enable": false,
-              "limit": 20000
-            },
-            "offline": {
-              "enable": true,
-              "limit": 20000
-            },
-            "international": {
-              "enable": false,
-              "limit": 100000
-            },
-            "online": {
-              "enable": false,
-              "limit": 20000
-            },
-            "contactless": {
-              "enable": true,
-              "limit": 20000
-            }
-          },
-          "currentPeriodRewardPoints": 5500,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143145",
-          "chequeBookDetails": {
-            "enabled": false
-          },
-          "holdingType": "",
-          "openingDate": "03-23-2001",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "ea8e220471f5b842",
-          "displayAccountType": "Checking Account",
-          "displayNumber": "XXX2345",
-          "displayLastFour": "2345",
-          "displayStatus": "active",
-          "label": "Checking Account - 2345",
-          "nicknameLabel": "Joint - 2345",
-          "synonym": [
-            "\"Joint - 2345\"",
-            "\"Checking Account - 2345\"",
-            "\"Checking Account\"",
-            "\"joint\"",
-            "\"Basic Checking\"",
-            "joint",
-            "\"1042345\"",
-            "\"2345\"",
-            "\"1234456778901690\"",
-            "\"1234 4567 7890 1690\"",
-            "\"1690\"",
-            "\"~checkingaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Joint - 2345\"",
-            "\"Checking Account - 2345\"",
-            "\"Checking Account\"",
-            "\"joint\"",
-            "\"Basic Checking\"",
-            "joint"
-          ],
-          "synonym_numbers": [
-            "\"1042345\"",
-            "\"2345\"",
-            "\"1234456778901690\"",
-            "\"1234 4567 7890 1690\"",
-            "\"1690\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Savings Account",
-          "accountNickname": "Vacation Fund",
-          "accountNumber": "1043693",
-          "accountType": "Savings Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 2256.93,
-          "currentBalance": 20,
-          "minimumBalance": 1500,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "01-01-2011",
-          "deactivatedDate": "",
-          "lastUpdated": "01-07-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": null,
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "",
-          "availableCash": null,
-          "personalBankerName": "William Smith",
-          "personalBankerContact": {
-            "email": "William.Smith@bank.com",
-            "mobileNumber": "(904) 236-2345"
-          },
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "",
-          "cardNetwork": "Discover",
-          "cardName": "Getaway Card",
-          "P2PLimit": 300,
-          "CardStatus": "",
-          "routingNumber": 122105159,
-          "availableCashLimit": 500,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Boost Savings\"",
-          "productCode": "MS02",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "172 W Flagler Street, Miami, Florida, 33130",
-          "email": "test12@gmail.com",
-          "phone": 14085040880,
-          "expDate": "",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143144",
-          "holdingType": "",
-          "openingDate": "02-24-2000",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "3284c44694d2a97f",
-          "displayAccountType": "Savings Account",
-          "displayNumber": "XXX3693",
-          "displayLastFour": "3693",
-          "displayStatus": "active",
-          "label": "Savings Account - 3693",
-          "nicknameLabel": "Vacation Fund - 3693",
-          "synonym": [
-            "\"Vacation Fund - 3693\"",
-            "\"Savings Account - 3693\"",
-            "\"Savings Account\"",
-            "\"vacation fund\"",
-            "\"Boost Savings\"",
-            "getaway",
-            "vacation fund",
-            "\"1043693\"",
-            "\"3693\"",
-            "\"~savingsaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Vacation Fund - 3693\"",
-            "\"Savings Account - 3693\"",
-            "\"Savings Account\"",
-            "\"vacation fund\"",
-            "\"Boost Savings\"",
-            "getaway",
-            "vacation fund"
-          ],
-          "synonym_numbers": [
-            "\"1043693\"",
-            "\"3693\""
-          ]
-        },
-        {
-          "customerId": 1045300,
-          "nameOnAccount": "John",
-          "accountName": "Savings Account",
-          "accountNickname": "Joint with Son",
-          "accountNumber": "1042222",
-          "accountType": "Savings Account",
-          "status": "active",
-          "currency": "USD",
-          "availableBalance": 5649.65,
-          "currentBalance": 20,
-          "minimumBalance": 1500,
-          "creditLimit": null,
-          "statementDate": "",
-          "activatedDate": "01-01-2011",
-          "deactivatedDate": "",
-          "lastUpdated": "01-07-2019",
-          "image": "",
-          "availableCredit": null,
-          "unbilledAmount": null,
-          "dueAmount": null,
-          "dueDate": "",
-          "cardNumber": null,
-          "minimumPaymentDue": null,
-          "rewardPoints": null,
-          "expiryDate": "",
-          "availableCash": null,
-          "personalBankerName": "William Smith",
-          "personalBankerContact": {
-            "email": "William.Smith@bank.com",
-            "mobileNumber": "(904) 236-2345"
-          },
-          "maxTransactionLimit": 400000,
-          "userID": "fa66596f0c9cb924",
-          "cardType": "",
-          "cardNetwork": "Discover",
-          "cardName": "Getaway Card",
-          "P2PLimit": 450,
-          "CardStatus": "",
-          "routingNumber": 122105155,
-          "availableCashLimit": 1500,
-          "principalBalance": null,
-          "payoffAmount": null,
-          "originalLoanAmount": null,
-          "monthlyPayment": null,
-          "loanOriginationDate": "",
-          "propertyAddress": "",
-          "lastDrawDate": "",
-          "productName": "\"Basic Savings\"",
-          "productCode": "BS03",
-          "totalBalance": null,
-          "postedBalance": null,
-          "loanMaturityDate": "",
-          "location": "1320 Park avenue, Orlando, Florida, 76656",
-          "email": "testing11@gmail.com",
-          "phone": 14085040880,
-          "expDate": "",
-          "maturityDate": "",
-          "interestRate": null,
-          "valueAtMaturity": null,
-          "earlyWithdrawalPenalty": null,
-          "internalTransferFromEnabled": true,
-          "internalTransferToEnabled": true,
-          "p2pEnabled": true,
-          "paybillEnabled": true,
-          "swiftCode": "",
-          "branchName": "",
-          "bankName": "",
-          "openingBalance": null,
-          "netWithdrawableBalance": null,
-          "holdAmount": null,
-          "unclearFundsAmount": null,
-          "averageMonthlyBalance": null,
-          "fdType": "",
-          "totalTenure": "",
-          "paidTenure": "",
-          "remainingTenure": "",
-          "debitAccountNumber": "",
-          "lateFee": null,
-          "bounceCharge": null,
-          "totalCharges": null,
-          "overDueAmount": null,
-          "lastEmiPaidOn": "",
-          "repaymentAccountNumber": null,
-          "repaymentBankName": "",
-          "currentPeriodRewardPoints": null,
-          "emiCount": null,
-          "blockReason": "",
-          "freezeType": "",
-          "partialPaymentPaid": null,
-          "iban": "68143143",
-          "holdingType": "",
-          "openingDate": "01-23-2000",
-          "InterestDue": null,
-          "isStatement": false,
-          "isPrimaryMobileNumber": false,
-          "isAlternateMobileNumber": false,
-          "hasMissedEMI": false,
-          "id": "272939d260813892",
-          "displayAccountType": "Savings Account",
-          "displayNumber": "XXX2222",
-          "displayLastFour": "2222",
-          "displayStatus": "active",
-          "label": "Savings Account - 2222",
-          "nicknameLabel": "Joint with Son - 2222",
-          "synonym": [
-            "\"Joint with Son - 2222\"",
-            "\"Savings Account - 2222\"",
-            "\"Savings Account\"",
-            "\"joint with son\"",
-            "\"Basic Savings\"",
-            "getaway",
-            "joint with son",
-            "\"1042222\"",
-            "\"2222\"",
-            "\"~savingsaccountsynonyms\""
-          ],
-          "synonym_names": [
-            "\"Joint with Son - 2222\"",
-            "\"Savings Account - 2222\"",
-            "\"Savings Account\"",
-            "\"joint with son\"",
-            "\"Basic Savings\"",
-            "getaway",
-            "joint with son"
-          ],
-          "synonym_numbers": [
-            "\"1042222\"",
-            "\"2222\""
-          ]
-        }
+      "allAccountType": [
+        "Checking Account"
       ]
     },
-    "metaTags": {
-      "UserLevelTags": [],
-      "SessionLevelTags": [],
-      "MessageLevelTags": []
-    },
-    "contextTags": [
-      "Get Account Balance",
-      "Get_Account_Balance",
-      "Logmein",
-      "Capture Account Data",
-      "captureAccountData"
+    "entityErrorCount": {},
+    "amendEntities": {},
+    "history": [],
+    "updatedOn": "2024-02-11T13:28:16.995Z",
+    "intentName": "viewLimits",
+    "currentNodeId": "script69",
+    "currentNodeName": "IntentValidation_GACL",
+    "currentLanguage": "en",
+    "suggestedLanguages": [
+      "da"
     ],
-    "removeContextTags": [],
-    "debugLogs": [],
-    "textTranslations": [],
-    "tokenIdpsToExpire": [],
-    "clearAllAuthTokens": false,
+    "onHoldTasks": [],
+    "currentTraits": [],
+    "currentTags": {
+      "tags": [
+        "Get Accounts and Card Limits",
+        "viewLimits",
+        "Logmein",
+        "Capture Account Data",
+        "captureAccountData"
+      ]
+    },
+    "NLAnalysis": {
+      "userInput": "1111",
+      "intents": {
+        "successIntents": [
+          {
+            "identifyingEngine": "ML",
+            "intent": "Get Account Transactions",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0.71,
+            "rr": 71,
+            "matchType": "possible"
+          },
+          {
+            "identifyingEngine": "ML",
+            "intent": "Get Account Information",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0.71,
+            "rr": 71,
+            "matchType": "possible"
+          },
+          {
+            "identifyingEngine": "ML",
+            "intent": "Get Account Number",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0.711,
+            "rr": 71.1,
+            "matchType": "possible"
+          }
+        ],
+        "eliminatedIntents": [
+          {
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Setup Savings Goal",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Get Account Nickname",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Get Account Balance",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Make Transfers or Payments",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Get Account Opening Date",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Get Interest Rate",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          },
+          {
+            "intent": "Get Maturity Date for Accounts",
+            "type": "dialogTask",
+            "fm": 0,
+            "ml": 0,
+            "rr": 0
+          }
+        ],
+        "nerInfo": []
+      }
+    },
+    "traversedIntents": [
+      {
+        "name": "Get Accounts and Card Limits",
+        "dialogId": "dg-5cbb8ee4-b1b1-59e5-b718-1d75763a2054"
+      }
+    ],
+    "endOfTask": {
+      "endOfTaskReason": "Fulfilled_ParentDialog_Resumed",
+      "intentType": "dialog",
+      "taskName": "Capture Account Data",
+      "lastNode": "script17",
+      "lastNodeName": "accountFilteration"
+    },
+    "historicTags": [
+      {
+        "tags": [
+          "Welcome Dialog",
+          "BotNotifications"
+        ]
+      }
+    ],
+    "ccId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd:st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+    "previousNodeId": "script84",
+    "previousNodeName": "fetchLimitsScript",
+    "synonymsUsed": {
+      "CardSelection": [
+        "Debit"
+      ],
+      "limitPeriod": [
+        "Daily"
+      ]
+    },
+    "contextId": "dcx-ca20772a-d73b-54d8-81f5-103829fa7892",
+    "message_tone": [],
+    "dialog_tone": [],
     "isDeveloper": true,
-    "debugMessage": "accountValidation_GAB",
-    "requestId": "ms-d034c85b-df03-53ad-bf14-ed41faabc31b",
-    "contextId": "dcx-53591245-b8e0-51ac-925f-a49c9c584952"
-  }
+    "FollowupIntents": [
+      "Get Account Transactions"
+    ],
+    "faqResponse": false,
+    "taskNotSupported": false,
+    "intime": 1707658080747,
+    "currency": "USD",
+    "isSavePIN": true,
+    "reqbody": "{\"customerId\":1045300,\"meta\":{\"productCodes\":[{\"acc\":\"Checking\",\"sub\":\"Regular Checking\",\"code\":\"1\"}]}}",
+    "fdbkObj": {
+      "BAL_INQ": false,
+      "ACC_INFO": false,
+      "CUST_INFO": false
+    },
+    "wb_noAccounts": false,
+    "entityRules": {
+      "AccountType": {
+        "asString": true
+      },
+      "select_cc": {
+        "asString": true
+      }
+    },
+    "usecases": [
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "cashDepositLimit"
+        },
+        "traits": [],
+        "code": "CHKNG_ACC_CSHDEPLMT",
+        "useCaseName": "get checking account cash deposit limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "maxTransactionLimit"
+        },
+        "traits": [],
+        "code": "CC_TXN_LMT",
+        "useCaseName": "get Credit card transaction limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "maxTransactionLimit",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBT_TXN_LMT",
+        "useCaseName": "get Debit card transaction limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "maxTransactionLimit",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "DBT_TXN_LMT",
+        "useCaseName": "get Debit card transaction limit"
+      },
+      {
+        "entities": {
+          "accountType": "Savings Account",
+          "limitField": "cashDepositLimit"
+        },
+        "traits": [],
+        "code": "SVG_ACCCSH_DEPLMT",
+        "useCaseName": "get savings account cash deposit limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCashLimit"
+        },
+        "traits": [],
+        "code": "CC_CSHADVLMT",
+        "useCaseName": "get credit card cash advance limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "fundTransferLimit"
+        },
+        "traits": [],
+        "code": "CHKNG_ACCFND_TRNSFRLMT",
+        "useCaseName": "get checking account fund transfer limits"
+      },
+      {
+        "entities": {
+          "accountType": "debit card",
+          "limitField": "maxTransactionLimit"
+        },
+        "traits": [],
+        "code": "CHKNG_ACCTXN_LMT",
+        "useCaseName": "Get Checking account transaction Limits"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "maxTransactionLimit"
+        },
+        "traits": [],
+        "code": "CHKNG_ACCTXN_LMT",
+        "useCaseName": "Get Checking account transaction Limits"
+      },
+      {
+        "entities": {
+          "accountType": "Savings Account",
+          "limitField": "fundTransferLimit"
+        },
+        "traits": [],
+        "code": "SVG_ACCFND_TRNSFRLMT",
+        "useCaseName": "get savings account fund transfer limits"
+      },
+      {
+        "entities": {
+          "accountType": "Savings Account",
+          "limitField": "maxTransactionLimit"
+        },
+        "traits": [],
+        "code": "SVG_TXNLMT",
+        "useCaseName": "Get savings account transaction Limits"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "maxTransactionLimit",
+          "primaryOrSupplementary": "supplementary"
+        },
+        "traits": [],
+        "code": "TXNLMT_SUPCRD",
+        "useCaseName": "get transaction limit for supplementary card"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCashLimit",
+          "primaryOrSupplementary": "supplementary"
+        },
+        "traits": [],
+        "code": "CC_CSHADVLMT_SUPCRD",
+        "useCaseName": "get credit card cash advance limit for supplementary card"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "availableCash",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "ATM_LMT",
+        "useCaseName": "get atm limits"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "availableCash",
+          "limitPeriod": "Daily",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "DBTDLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Daily ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "availableCash",
+          "limitPeriod": "Daily",
+          "ATM": "ATM",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBTDLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Daily ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "availableCash",
+          "limitPeriod": "Monthly",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "DBTMLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Monthly ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "availableCash",
+          "limitPeriod": "Monthly",
+          "ATM": "ATM",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBTMLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Monthly ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "debit card",
+          "limitField": "availableCash",
+          "limitPeriod": "Daily",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "DBTDLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Daily ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "debit card",
+          "limitField": "availableCash",
+          "limitPeriod": "Monthly",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "DBTMLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Debit card Monthly ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Daily",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBT_DLY_TXNLMT",
+        "useCaseName": "Get Debit Card daily purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "debit card",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Daily"
+        },
+        "traits": [],
+        "code": "DBT_DLY_TXNLMT",
+        "useCaseName": "Get Debit Card daily purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Monthly",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBT_MLY_TXNLMT",
+        "useCaseName": "Get Debit Card monthly purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "debit card",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Monthly"
+        },
+        "traits": [],
+        "code": "DBT_MLY_TXNLMT",
+        "useCaseName": "Get Debit Card monthly purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Monthly",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "DBT_MLY_TXNLMT",
+        "useCaseName": "Get Debit Card monthly purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "purchaseTransactions",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBT_NUM_DAY_TXNLMT",
+        "useCaseName": "Get Debit Card number of purchases per day limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "purchaseTransactions",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "DBT_NUM_DAY_TXNLMT",
+        "useCaseName": "Get Debit Card number of purchases per day limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "purchaseTransactions"
+        },
+        "traits": [],
+        "code": "CC_NUM_DAY_TXNLMT",
+        "useCaseName": "Get Credit Card number of purchases per day limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "perTransactionLimit",
+          "captureCheckCard": "Check Card"
+        },
+        "traits": [],
+        "code": "DBT_PER_TXNLMT",
+        "useCaseName": "Get Debit Card per purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Checking Account",
+          "limitField": "perTransactionLimit",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "DBT_PER_TXNLMT",
+        "useCaseName": "Get Debit Card per purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "perTransactionLimit"
+        },
+        "traits": [],
+        "code": "CC_PER_TXNLMT",
+        "useCaseName": "Get Credit Card per purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Monthly"
+        },
+        "traits": [],
+        "code": "CC_MLY_TXNLMT",
+        "useCaseName": "Get Credit Card monthly purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "purchaseLimit",
+          "limitPeriod": "Daily"
+        },
+        "traits": [],
+        "code": "CC_DLY_TXNLMT",
+        "useCaseName": "Get Credit Card daily purchase amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCash",
+          "limitPeriod": "Daily",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "CCDLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Credit card Daily ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCash",
+          "limitPeriod": "Daily",
+          "ATM": "ATM",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "CCDLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Credit card Daily ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCash",
+          "limitPeriod": "Monthly",
+          "ATM": "ATM"
+        },
+        "traits": [],
+        "code": "CCMLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Credit card Monthly ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "availableCash",
+          "limitPeriod": "Monthly",
+          "ATM": "ATM",
+          "captureCheckCard": "card"
+        },
+        "traits": [],
+        "code": "CCMLY_ATM_WDLAMT_LMT",
+        "useCaseName": "Get Credit card Monthly ATM withdrawal amount limit"
+      },
+      {
+        "entities": {
+          "accountType": "Credit Card",
+          "limitField": "creditLimit"
+        },
+        "traits": [],
+        "code": "CC_CREDLMT",
+        "useCaseName": "get credit card Credit limit"
+      },
+      {
+        "entities": {
+          "accountType": "Line of Credit",
+          "limitField": "creditLimit"
+        },
+        "traits": [],
+        "code": "LIN_CREDLMT",
+        "useCaseName": "get line of credit credit limit"
+      }
+    ],
+    "currentFlow": true,
+    "getUC": {
+      "ucName": "Get Debit card Daily ATM withdrawal amount limit",
+      "currentFlow": true
+    },
+    "useCaseIdentificationObj": {
+      "accountType": "debit card",
+      "limitField": "availableCash",
+      "limitPeriod": "Daily",
+      "ATM": "ATM"
+    },
+    "fdbkFlag": false,
+    "accountData": [
+      {
+        "customerId": 1045300,
+        "nameOnAccount": "John",
+        "accountName": "Checking Account",
+        "accountNickname": "Joint",
+        "accountNumber": "1042345",
+        "accountType": "Checking Account",
+        "status": "active",
+        "currency": "USD",
+        "availableBalance": 6423.01,
+        "currentBalance": null,
+        "minimumBalance": 1300,
+        "creditLimit": null,
+        "statementDate": "",
+        "activatedDate": "03-01-2010",
+        "deactivatedDate": "",
+        "lastUpdated": "01-08-2019",
+        "image": "",
+        "availableCredit": null,
+        "unbilledAmount": null,
+        "dueAmount": null,
+        "dueDate": "",
+        "cardNumber": "1234456778901690",
+        "minimumPaymentDue": null,
+        "rewardPoints": null,
+        "expiryDate": "01-01-2025",
+        "availableCash": 1000,
+        "personalBankerName": "",
+        "maxTransactionLimit": 400000,
+        "userID": "fa66596f0c9cb924",
+        "cardType": "Primary",
+        "cardNetwork": "",
+        "cardName": "",
+        "P2PLimit": 7000,
+        "CardStatus": "active",
+        "routingNumber": 121122676,
+        "availableCashLimit": 1000,
+        "principalBalance": null,
+        "payoffAmount": null,
+        "originalLoanAmount": null,
+        "monthlyPayment": null,
+        "loanOriginationDate": "",
+        "propertyAddress": "",
+        "lastDrawDate": "",
+        "productName": "\"Basic Checking\"",
+        "productCode": "BC06",
+        "totalBalance": null,
+        "postedBalance": null,
+        "loanMaturityDate": "",
+        "location": "1234 Main street, New York, 32819",
+        "email": "test14@gmail.com",
+        "phone": 14085040880,
+        "expDate": "0125",
+        "maturityDate": "",
+        "interestRate": null,
+        "valueAtMaturity": null,
+        "earlyWithdrawalPenalty": null,
+        "internalTransferFromEnabled": true,
+        "internalTransferToEnabled": true,
+        "p2pEnabled": true,
+        "paybillEnabled": true,
+        "swiftCode": "",
+        "branchName": "",
+        "bankName": "",
+        "openingBalance": null,
+        "netWithdrawableBalance": null,
+        "holdAmount": null,
+        "unclearFundsAmount": null,
+        "averageMonthlyBalance": null,
+        "fdType": "",
+        "totalTenure": "",
+        "paidTenure": "",
+        "remainingTenure": "",
+        "debitAccountNumber": "",
+        "lateFee": null,
+        "bounceCharge": null,
+        "totalCharges": null,
+        "overDueAmount": null,
+        "lastEmiPaidOn": "",
+        "repaymentAccountNumber": null,
+        "repaymentBankName": "",
+        "cardChannelInfo": {
+          "ATM": {
+            "enable": false,
+            "limit": 20000
+          },
+          "offline": {
+            "enable": true,
+            "limit": 20000
+          },
+          "international": {
+            "enable": false,
+            "limit": 100000
+          },
+          "online": {
+            "enable": false,
+            "limit": 20000
+          },
+          "contactless": {
+            "enable": true,
+            "limit": 20000
+          }
+        },
+        "currentPeriodRewardPoints": 5500,
+        "emiCount": null,
+        "blockReason": "",
+        "freezeType": "",
+        "partialPaymentPaid": null,
+        "iban": "68143145",
+        "chequeBookDetails": {
+          "enabled": false
+        },
+        "holdingType": "",
+        "openingDate": "03-23-2001",
+        "cardDetails": [
+          {
+            "cardName": "VISA Platinum",
+            "cardNumber": "1234456778901690",
+            "cardStatus": "active",
+            "cardImage": "",
+            "cardType": "Primary",
+            "expDate": "0125",
+            "autopay": {},
+            "cardChannelInfo": {
+              "ATM": {
+                "enable": false,
+                "limit": 20000
+              },
+              "offline": {
+                "enable": true,
+                "limit": 20000
+              },
+              "international": {
+                "enable": false,
+                "limit": 100000
+              },
+              "online": {
+                "enable": false,
+                "limit": 20000
+              },
+              "contactless": {
+                "enable": true,
+                "limit": 20000
+              }
+            },
+            "cardRestrictions": {},
+            "rewardPoints": "",
+            "blockReason": "",
+            "nameOnCard": "",
+            "cardNetwork": "Discover",
+            "displayCardStatus": "Active",
+            "dueDate": "",
+            "minimumPaymentDue": "",
+            "partialPaymentPaid": ""
+          }
+        ],
+        "InterestDue": null,
+        "isStatement": false,
+        "isPrimaryMobileNumber": false,
+        "isAlternateMobileNumber": false,
+        "hasMissedEMI": false,
+        "id": "b07b75baede08aa7",
+        "displayAccountType": "Checking Account",
+        "displayNumber": "XXX2345",
+        "displayLastFour": "2345",
+        "displayStatus": "active",
+        "label": "Checking Account - 2345",
+        "nicknameLabel": "Joint - 2345",
+        "synonym": [
+          "\"Joint - 2345\"",
+          "\"Checking Account - 2345\"",
+          "\"Checking Account\"",
+          "\"joint\"",
+          "\"Basic Checking\"",
+          "joint",
+          "\"1042345\"",
+          "\"2345\"",
+          "\"1234456778901690\"",
+          "\"1234 4567 7890 1690\"",
+          "\"1690\"",
+          "\"~checkingaccountsynonyms\""
+        ],
+        "synonym_names": [
+          "\"Joint - 2345\"",
+          "\"Checking Account - 2345\"",
+          "\"Checking Account\"",
+          "\"joint\"",
+          "\"Basic Checking\"",
+          "joint"
+        ],
+        "synonym_numbers": [
+          "\"1042345\"",
+          "\"2345\"",
+          "\"1234456778901690\"",
+          "\"1234 4567 7890 1690\"",
+          "\"1690\""
+        ]
+      },
+      {
+        "customerId": 1045300,
+        "nameOnAccount": "John",
+        "accountName": "Savings Account",
+        "accountNickname": "Vacation Fund",
+        "accountNumber": "1043693",
+        "accountType": "Savings Account",
+        "status": "active",
+        "currency": "USD",
+        "availableBalance": 2256.93,
+        "currentBalance": 20,
+        "minimumBalance": 1500,
+        "creditLimit": null,
+        "statementDate": "",
+        "activatedDate": "01-01-2011",
+        "deactivatedDate": "",
+        "lastUpdated": "01-07-2019",
+        "image": "",
+        "availableCredit": null,
+        "unbilledAmount": null,
+        "dueAmount": null,
+        "dueDate": "",
+        "cardNumber": null,
+        "minimumPaymentDue": null,
+        "rewardPoints": null,
+        "expiryDate": "",
+        "availableCash": null,
+        "personalBankerName": "William Smith",
+        "personalBankerContact": {
+          "email": "William.Smith@bank.com",
+          "mobileNumber": "(904) 236-2345"
+        },
+        "maxTransactionLimit": 400000,
+        "userID": "fa66596f0c9cb924",
+        "cardType": "",
+        "cardNetwork": "Discover",
+        "cardName": "Getaway Card",
+        "P2PLimit": 300,
+        "CardStatus": "",
+        "routingNumber": 122105159,
+        "availableCashLimit": 500,
+        "principalBalance": null,
+        "payoffAmount": null,
+        "originalLoanAmount": null,
+        "monthlyPayment": null,
+        "loanOriginationDate": "",
+        "propertyAddress": "",
+        "lastDrawDate": "",
+        "productName": "\"Boost Savings\"",
+        "productCode": "MS02",
+        "totalBalance": null,
+        "postedBalance": null,
+        "loanMaturityDate": "",
+        "location": "172 W Flagler Street, Miami, Florida, 33130",
+        "email": "test12@gmail.com",
+        "phone": 14085040880,
+        "expDate": "",
+        "maturityDate": "",
+        "interestRate": null,
+        "valueAtMaturity": null,
+        "earlyWithdrawalPenalty": null,
+        "internalTransferFromEnabled": true,
+        "internalTransferToEnabled": true,
+        "p2pEnabled": true,
+        "paybillEnabled": true,
+        "swiftCode": "",
+        "branchName": "",
+        "bankName": "",
+        "openingBalance": null,
+        "netWithdrawableBalance": null,
+        "holdAmount": null,
+        "unclearFundsAmount": null,
+        "averageMonthlyBalance": null,
+        "fdType": "",
+        "totalTenure": "",
+        "paidTenure": "",
+        "remainingTenure": "",
+        "debitAccountNumber": "",
+        "lateFee": null,
+        "bounceCharge": null,
+        "totalCharges": null,
+        "overDueAmount": null,
+        "lastEmiPaidOn": "",
+        "repaymentAccountNumber": null,
+        "repaymentBankName": "",
+        "currentPeriodRewardPoints": null,
+        "emiCount": null,
+        "blockReason": "",
+        "freezeType": "",
+        "partialPaymentPaid": null,
+        "iban": "68143144",
+        "holdingType": "",
+        "openingDate": "02-24-2000",
+        "cardDetails": [
+          {
+            "cardName": "Getaway Card",
+            "cardNumber": "",
+            "cardStatus": "active",
+            "cardImage": "",
+            "cardType": "primary",
+            "expDate": "",
+            "autopay": {},
+            "cardChannelInfo": {},
+            "cardRestrictions": {},
+            "rewardPoints": "",
+            "blockReason": "",
+            "nameOnCard": "",
+            "cardNetwork": "Discover",
+            "displayCardStatus": "Active",
+            "dueDate": "",
+            "minimumPaymentDue": "",
+            "partialPaymentPaid": ""
+          }
+        ],
+        "InterestDue": null,
+        "isStatement": false,
+        "isPrimaryMobileNumber": false,
+        "isAlternateMobileNumber": false,
+        "hasMissedEMI": false,
+        "id": "c10baaf3fd166856",
+        "displayAccountType": "Savings Account",
+        "displayNumber": "XXX3693",
+        "displayLastFour": "3693",
+        "displayStatus": "active",
+        "label": "Savings Account - 3693",
+        "nicknameLabel": "Vacation Fund - 3693",
+        "synonym": [
+          "\"Vacation Fund - 3693\"",
+          "\"Savings Account - 3693\"",
+          "\"Savings Account\"",
+          "\"vacation fund\"",
+          "\"Boost Savings\"",
+          "getaway",
+          "vacation fund",
+          "\"1043693\"",
+          "\"3693\"",
+          "\"~savingsaccountsynonyms\""
+        ],
+        "synonym_names": [
+          "\"Vacation Fund - 3693\"",
+          "\"Savings Account - 3693\"",
+          "\"Savings Account\"",
+          "\"vacation fund\"",
+          "\"Boost Savings\"",
+          "getaway",
+          "vacation fund"
+        ],
+        "synonym_numbers": [
+          "\"1043693\"",
+          "\"3693\""
+        ]
+      },
+      {
+        "customerId": 1045300,
+        "nameOnAccount": "John",
+        "accountName": "Savings Account",
+        "accountNickname": "Joint with Son",
+        "accountNumber": "1042222",
+        "accountType": "Savings Account",
+        "status": "active",
+        "currency": "USD",
+        "availableBalance": 5649.65,
+        "currentBalance": 20,
+        "minimumBalance": 1500,
+        "creditLimit": null,
+        "statementDate": "",
+        "activatedDate": "01-01-2011",
+        "deactivatedDate": "",
+        "lastUpdated": "01-07-2019",
+        "image": "",
+        "availableCredit": null,
+        "unbilledAmount": null,
+        "dueAmount": null,
+        "dueDate": "",
+        "cardNumber": null,
+        "minimumPaymentDue": null,
+        "rewardPoints": null,
+        "expiryDate": "",
+        "availableCash": null,
+        "personalBankerName": "William Smith",
+        "personalBankerContact": {
+          "email": "William.Smith@bank.com",
+          "mobileNumber": "(904) 236-2345"
+        },
+        "maxTransactionLimit": 400000,
+        "userID": "fa66596f0c9cb924",
+        "cardType": "",
+        "cardNetwork": "Discover",
+        "cardName": "Getaway Card",
+        "P2PLimit": 450,
+        "CardStatus": "",
+        "routingNumber": 122105155,
+        "availableCashLimit": 1500,
+        "principalBalance": null,
+        "payoffAmount": null,
+        "originalLoanAmount": null,
+        "monthlyPayment": null,
+        "loanOriginationDate": "",
+        "propertyAddress": "",
+        "lastDrawDate": "",
+        "productName": "\"Basic Savings\"",
+        "productCode": "BS03",
+        "totalBalance": null,
+        "postedBalance": null,
+        "loanMaturityDate": "",
+        "location": "1320 Park avenue, Orlando, Florida, 76656",
+        "email": "testing11@gmail.com",
+        "phone": 14085040880,
+        "expDate": "",
+        "maturityDate": "",
+        "interestRate": null,
+        "valueAtMaturity": null,
+        "earlyWithdrawalPenalty": null,
+        "internalTransferFromEnabled": true,
+        "internalTransferToEnabled": true,
+        "p2pEnabled": true,
+        "paybillEnabled": true,
+        "swiftCode": "",
+        "branchName": "",
+        "bankName": "",
+        "openingBalance": null,
+        "netWithdrawableBalance": null,
+        "holdAmount": null,
+        "unclearFundsAmount": null,
+        "averageMonthlyBalance": null,
+        "fdType": "",
+        "totalTenure": "",
+        "paidTenure": "",
+        "remainingTenure": "",
+        "debitAccountNumber": "",
+        "lateFee": null,
+        "bounceCharge": null,
+        "totalCharges": null,
+        "overDueAmount": null,
+        "lastEmiPaidOn": "",
+        "repaymentAccountNumber": null,
+        "repaymentBankName": "",
+        "currentPeriodRewardPoints": null,
+        "emiCount": null,
+        "blockReason": "",
+        "freezeType": "",
+        "partialPaymentPaid": null,
+        "iban": "68143143",
+        "holdingType": "",
+        "openingDate": "01-23-2000",
+        "cardDetails": [
+          {
+            "cardName": "Getaway Card",
+            "cardNumber": "",
+            "cardStatus": "active",
+            "cardImage": "",
+            "cardType": "primary",
+            "expDate": "",
+            "autopay": {},
+            "cardChannelInfo": {},
+            "cardRestrictions": {},
+            "rewardPoints": "",
+            "blockReason": "",
+            "nameOnCard": "",
+            "cardNetwork": "Discover",
+            "displayCardStatus": "Active",
+            "dueDate": "",
+            "minimumPaymentDue": "",
+            "partialPaymentPaid": ""
+          }
+        ],
+        "InterestDue": null,
+        "isStatement": false,
+        "isPrimaryMobileNumber": false,
+        "isAlternateMobileNumber": false,
+        "hasMissedEMI": false,
+        "id": "b00d629fffa6181f",
+        "displayAccountType": "Savings Account",
+        "displayNumber": "XXX2222",
+        "displayLastFour": "2222",
+        "displayStatus": "active",
+        "label": "Savings Account - 2222",
+        "nicknameLabel": "Joint with Son - 2222",
+        "synonym": [
+          "\"Joint with Son - 2222\"",
+          "\"Savings Account - 2222\"",
+          "\"Savings Account\"",
+          "\"joint with son\"",
+          "\"Basic Savings\"",
+          "getaway",
+          "joint with son",
+          "\"1042222\"",
+          "\"2222\"",
+          "\"~savingsaccountsynonyms\""
+        ],
+        "synonym_names": [
+          "\"Joint with Son - 2222\"",
+          "\"Savings Account - 2222\"",
+          "\"Savings Account\"",
+          "\"joint with son\"",
+          "\"Basic Savings\"",
+          "getaway",
+          "joint with son"
+        ],
+        "synonym_numbers": [
+          "\"1042222\"",
+          "\"2222\""
+        ]
+      },
+      {
+        "customerId": 1045300,
+        "nameOnAccount": "John",
+        "accountName": "Credit Card",
+        "accountNickname": "Rewards Card",
+        "accountNumber": "1234456778901234",
+        "accountType": "Credit Card",
+        "status": "active",
+        "currency": "USD",
+        "availableBalance": 8547.43,
+        "currentBalance": null,
+        "minimumBalance": null,
+        "creditLimit": 10000,
+        "statementDate": "01/22/2024",
+        "activatedDate": "01-01-2010",
+        "deactivatedDate": "",
+        "lastUpdated": "01-08-2019",
+        "image": "",
+        "availableCredit": 1452.57,
+        "unbilledAmount": 5698.17,
+        "dueAmount": 7500,
+        "dueDate": "06/25/2021",
+        "cardNumber": "1234456778901234",
+        "minimumPaymentDue": "300",
+        "rewardPoints": "123",
+        "expiryDate": "01-01-2025",
+        "availableCash": 200,
+        "personalBankerName": "",
+        "maxTransactionLimit": null,
+        "userID": "fa66596f0c9cb924",
+        "cardType": "Primary",
+        "cardNetwork": "Visa",
+        "cardName": "MasterCard",
+        "P2PLimit": null,
+        "CardStatus": "active",
+        "routingNumber": 122235821,
+        "availableCashLimit": 1000,
+        "principalBalance": null,
+        "payoffAmount": null,
+        "originalLoanAmount": null,
+        "monthlyPayment": null,
+        "loanOriginationDate": "",
+        "propertyAddress": "",
+        "lastDrawDate": "",
+        "productName": "",
+        "productCode": "CC01",
+        "totalBalance": 13198.17,
+        "postedBalance": null,
+        "loanMaturityDate": "",
+        "location": "161 River Marsh Dr, Ponte Vedra Beach, Florida, 32082",
+        "email": "test13@gmail.com",
+        "phone": 14085040880,
+        "expDate": "0125",
+        "maturityDate": "",
+        "interestRate": null,
+        "valueAtMaturity": null,
+        "earlyWithdrawalPenalty": null,
+        "internalTransferFromEnabled": true,
+        "internalTransferToEnabled": true,
+        "p2pEnabled": true,
+        "paybillEnabled": true,
+        "swiftCode": "",
+        "branchName": "",
+        "bankName": "",
+        "openingBalance": null,
+        "netWithdrawableBalance": null,
+        "holdAmount": null,
+        "unclearFundsAmount": null,
+        "averageMonthlyBalance": null,
+        "fdType": "",
+        "totalTenure": "",
+        "paidTenure": "",
+        "remainingTenure": "",
+        "debitAccountNumber": "",
+        "lateFee": null,
+        "bounceCharge": null,
+        "totalCharges": null,
+        "overDueAmount": null,
+        "lastEmiPaidOn": "",
+        "repaymentAccountNumber": null,
+        "repaymentBankName": "",
+        "cardChannelInfo": {
+          "ATM": {
+            "enable": false,
+            "limit": 20000
+          },
+          "offline": {
+            "enable": true,
+            "limit": 20000
+          },
+          "international": {
+            "enable": false,
+            "limit": 100000
+          },
+          "online": {
+            "enable": false,
+            "limit": 20000
+          },
+          "contactless": {
+            "enable": true,
+            "limit": 20000
+          }
+        },
+        "currentPeriodRewardPoints": null,
+        "emiCount": null,
+        "blockReason": "",
+        "freezeType": "",
+        "partialPaymentPaid": "1523",
+        "iban": "",
+        "holdingType": "",
+        "openingDate": "04-23-2002",
+        "cardDetails": [
+          {
+            "cardName": "MasterCard",
+            "cardNumber": "1234456778901234",
+            "cardStatus": "active",
+            "cardImage": "",
+            "cardType": "Primary",
+            "expDate": "0125",
+            "autopay": {},
+            "cardChannelInfo": {
+              "ATM": {
+                "enable": false,
+                "limit": 20000
+              },
+              "offline": {
+                "enable": true,
+                "limit": 20000
+              },
+              "international": {
+                "enable": false,
+                "limit": 100000
+              },
+              "online": {
+                "enable": false,
+                "limit": 20000
+              },
+              "contactless": {
+                "enable": true,
+                "limit": 20000
+              }
+            },
+            "cardRestrictions": {},
+            "rewardPoints": "123",
+            "blockReason": "",
+            "nameOnCard": "",
+            "cardNetwork": "Visa",
+            "displayCardStatus": "Active",
+            "dueDate": "06/25/2021",
+            "minimumPaymentDue": "300",
+            "partialPaymentPaid": "1523"
+          }
+        ],
+        "InterestDue": null,
+        "isStatement": false,
+        "isPrimaryMobileNumber": false,
+        "isAlternateMobileNumber": false,
+        "hasMissedEMI": false,
+        "id": "6dc97beb5ce39806",
+        "cardStatus": "active",
+        "cardImage": "",
+        "autopay": {},
+        "cardRestrictions": {},
+        "nameOnCard": "",
+        "displayCardStatus": "Active",
+        "displayAccountNumber": "1045301",
+        "displayAccountType": "Credit Card",
+        "displayCardType": "Primary",
+        "displayLastFour": "1234",
+        "displayNumber": "XXX1234",
+        "cardKind": "Credit Card",
+        "label": "Credit Card - 1234",
+        "nicknameLabel": "MasterCard - 1234",
+        "synonym": [
+          "\"1234456778901234\"",
+          "\"1234 4567 7890 1234\"",
+          "\"~creditcard\"",
+          "'Credit Card'",
+          "\"rewards card\"",
+          "\"MasterCard - 1234\"",
+          "\"Credit Card - 1234\"",
+          "\"MasterCard\"",
+          "mastercard",
+          "rewards",
+          "\"1234\""
+        ],
+        "synonym_names": [
+          "'Credit Card'",
+          "\"rewards card\"",
+          "\"MasterCard - 1234\"",
+          "\"Credit Card - 1234\"",
+          "\"MasterCard\"",
+          "mastercard",
+          "rewards"
+        ],
+        "synonym_numbers": [
+          "\"1234456778901234\"",
+          "\"1234\""
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "name": "Credit Limit",
+        "value": "creditLimit",
+        "synonyms": [
+          "\"~creditlimit\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Line of Credit",
+          "Home Equity Line"
+        ],
+        "label": "credit limit",
+        "contentVariable": "creditLimitMessage",
+        "label_plural": "credit limits"
+      },
+      {
+        "name": "Available Cash Limit",
+        "value": "availableCashLimit",
+        "synonyms": [
+          "\"~availablecashlimit\""
+        ],
+        "availability": [
+          "Credit Card"
+        ],
+        "label": "cash advances",
+        "contentVariable": "showCashAdvancesLimit",
+        "label_plural": "cash advances"
+      },
+      {
+        "name": "Annual Deposit Limit",
+        "value": "annualDepositLimit",
+        "synonyms": [
+          "\"~annualdepositlimit\""
+        ],
+        "availability": [
+          "IRA"
+        ],
+        "label": "annual deposit limit",
+        "contentVariable": "annualDepositLimit",
+        "label_plural": "annual deposit limits"
+      },
+      {
+        "name": "Available Credit",
+        "value": "availableCredit",
+        "synonyms": [
+          "\"~availablecreditdraw\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Line of Credit"
+        ],
+        "label": "available credit",
+        "contentVariable": "availableCreditMessage",
+        "label_plural": "available credits"
+      },
+      {
+        "name": "Max Transaction Limit",
+        "value": "maxTransactionLimit",
+        "synonyms": [
+          "\"~maxtransactionlimit\""
+        ],
+        "label": "transaction limit",
+        "contentVariable": "transactionLimitMessage",
+        "label_plural": "transaction limits"
+      },
+      {
+        "name": "Cash Deposit Limit",
+        "value": "cashDepositLimit",
+        "synonyms": [
+          "\"~cashdepositlimit\"",
+          "\"~deposit\"",
+          "\"depositlimit\""
+        ],
+        "availability": [
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "cash deposit limit",
+        "contentVariable": "showCashDepositLimit",
+        "label_plural": "cash deposit limits"
+      },
+      {
+        "name": "Fund Transfer Limit",
+        "value": "fundTransferLimit",
+        "synonyms": [
+          "\"~cashdepositlimit\"",
+          "\"~deposit\"",
+          "\"depositlimit\""
+        ],
+        "availability": [
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "cash deposit limit",
+        "contentVariable": "showCashDepositLimit"
+      },
+      {
+        "name": "Available Cash",
+        "value": "availableCash",
+        "synonyms": [
+          "\"~availablecashdraw\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "withdrawal limit",
+        "contentVariable": "showCashAdvances",
+        "label_plural": "withdrawal limits"
+      },
+      {
+        "name": "Purchase Limit",
+        "value": "purchaseLimit",
+        "synonyms": [
+          "\"~purchaselimit\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "purchase limit"
+      },
+      {
+        "name": "Number of Transactions per day",
+        "value": "numberofTransactionsPerDay",
+        "synonyms": [
+          "\"~numberoftransactionsperday\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "number of transactions per day"
+      },
+      {
+        "name": "Withdrawal transactions",
+        "value": "withdrawalTransactions",
+        "synonyms": [
+          "\"~withdrawaltransactions\""
+        ],
+        "availability": [
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "withdrawal transactions."
+      },
+      {
+        "name": "Purchase transactions",
+        "value": "purchaseTransactions",
+        "synonyms": [
+          "\"~purchasetransactions\""
+        ],
+        "availability": [
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "purchase transactions"
+      },
+      {
+        "name": "Per Transaction Limit",
+        "value": "perTransactionLimit",
+        "synonyms": [
+          "\"~pertransactionlimit\""
+        ],
+        "availability": [
+          "Credit Card",
+          "Checking Account",
+          "Savings Account"
+        ],
+        "label": "per transaction limit",
+        "contentVariable": "transactionLimitMessage"
+      }
+    ],
+    "fetchAccNames": {
+      "1042222": "Joint with Son - 2222",
+      "1042345": "Joint - 2345",
+      "1043693": "Vacation Fund - 3693",
+      "1045301": "Rewards Card - 1234"
+    },
+    "customerAccounts": [
+      {
+        "customerId": 1045300,
+        "nameOnAccount": "John",
+        "accountName": "Checking Account",
+        "accountNickname": "Joint",
+        "accountNumber": "1042345",
+        "accountType": "Checking Account",
+        "status": "active",
+        "currency": "USD",
+        "availableBalance": 6423.01,
+        "currentBalance": null,
+        "minimumBalance": 1300,
+        "creditLimit": null,
+        "statementDate": "",
+        "activatedDate": "03-01-2010",
+        "deactivatedDate": "",
+        "lastUpdated": "01-08-2019",
+        "image": "",
+        "availableCredit": null,
+        "unbilledAmount": null,
+        "dueAmount": null,
+        "dueDate": "",
+        "cardNumber": "1234456778901690",
+        "minimumPaymentDue": null,
+        "rewardPoints": null,
+        "expiryDate": "01-01-2025",
+        "availableCash": 1000,
+        "personalBankerName": "",
+        "maxTransactionLimit": 400000,
+        "userID": "fa66596f0c9cb924",
+        "cardType": "Primary",
+        "cardNetwork": "",
+        "cardName": "",
+        "P2PLimit": 7000,
+        "CardStatus": "active",
+        "routingNumber": 121122676,
+        "availableCashLimit": 1000,
+        "principalBalance": null,
+        "payoffAmount": null,
+        "originalLoanAmount": null,
+        "monthlyPayment": null,
+        "loanOriginationDate": "",
+        "propertyAddress": "",
+        "lastDrawDate": "",
+        "productName": "\"Basic Checking\"",
+        "productCode": "BC06",
+        "totalBalance": null,
+        "postedBalance": null,
+        "loanMaturityDate": "",
+        "location": "1234 Main street, New York, 32819",
+        "email": "test14@gmail.com",
+        "phone": 14085040880,
+        "expDate": "0125",
+        "maturityDate": "",
+        "interestRate": null,
+        "valueAtMaturity": null,
+        "earlyWithdrawalPenalty": null,
+        "internalTransferFromEnabled": true,
+        "internalTransferToEnabled": true,
+        "p2pEnabled": true,
+        "paybillEnabled": true,
+        "swiftCode": "",
+        "branchName": "",
+        "bankName": "",
+        "openingBalance": null,
+        "netWithdrawableBalance": null,
+        "holdAmount": null,
+        "unclearFundsAmount": null,
+        "averageMonthlyBalance": null,
+        "fdType": "",
+        "totalTenure": "",
+        "paidTenure": "",
+        "remainingTenure": "",
+        "debitAccountNumber": "",
+        "lateFee": null,
+        "bounceCharge": null,
+        "totalCharges": null,
+        "overDueAmount": null,
+        "lastEmiPaidOn": "",
+        "repaymentAccountNumber": null,
+        "repaymentBankName": "",
+        "cardChannelInfo": {
+          "ATM": {
+            "enable": false,
+            "limit": 20000
+          },
+          "offline": {
+            "enable": true,
+            "limit": 20000
+          },
+          "international": {
+            "enable": false,
+            "limit": 100000
+          },
+          "online": {
+            "enable": false,
+            "limit": 20000
+          },
+          "contactless": {
+            "enable": true,
+            "limit": 20000
+          }
+        },
+        "currentPeriodRewardPoints": 5500,
+        "emiCount": null,
+        "blockReason": "",
+        "freezeType": "",
+        "partialPaymentPaid": null,
+        "iban": "68143145",
+        "chequeBookDetails": {
+          "enabled": false
+        },
+        "holdingType": "",
+        "openingDate": "03-23-2001",
+        "cardDetails": [
+          {
+            "cardName": "VISA Platinum",
+            "cardNumber": "1234456778901690",
+            "cardStatus": "active",
+            "cardImage": "",
+            "cardType": "Primary",
+            "expDate": "0125",
+            "autopay": {},
+            "cardChannelInfo": {
+              "ATM": {
+                "enable": false,
+                "limit": 20000
+              },
+              "offline": {
+                "enable": true,
+                "limit": 20000
+              },
+              "international": {
+                "enable": false,
+                "limit": 100000
+              },
+              "online": {
+                "enable": false,
+                "limit": 20000
+              },
+              "contactless": {
+                "enable": true,
+                "limit": 20000
+              }
+            },
+            "cardRestrictions": {},
+            "rewardPoints": "",
+            "blockReason": "",
+            "nameOnCard": "",
+            "cardNetwork": "Discover",
+            "displayCardStatus": "Active",
+            "dueDate": "",
+            "minimumPaymentDue": "",
+            "partialPaymentPaid": ""
+          }
+        ],
+        "InterestDue": null,
+        "isStatement": false,
+        "isPrimaryMobileNumber": false,
+        "isAlternateMobileNumber": false,
+        "hasMissedEMI": false,
+        "id": "b07b75baede08aa7",
+        "displayAccountType": "Checking Account",
+        "displayNumber": "XXX2345",
+        "displayLastFour": "2345",
+        "displayStatus": "active",
+        "label": "Checking Account - 2345",
+        "nicknameLabel": "Joint - 2345",
+        "synonym": [
+          "\"Joint - 2345\"",
+          "\"Checking Account - 2345\"",
+          "\"Checking Account\"",
+          "\"joint\"",
+          "\"Basic Checking\"",
+          "joint",
+          "\"1042345\"",
+          "\"2345\"",
+          "\"1234456778901690\"",
+          "\"1234 4567 7890 1690\"",
+          "\"1690\"",
+          "\"~checkingaccountsynonyms\""
+        ],
+        "synonym_names": [
+          "\"Joint - 2345\"",
+          "\"Checking Account - 2345\"",
+          "\"Checking Account\"",
+          "\"joint\"",
+          "\"Basic Checking\"",
+          "joint"
+        ],
+        "synonym_numbers": [
+          "\"1042345\"",
+          "\"2345\"",
+          "\"1234456778901690\"",
+          "\"1234 4567 7890 1690\"",
+          "\"1690\""
+        ]
+      }
+    ],
+    "isCard": true,
+    "promptForAccount": false,
+    "allowedOrNot": true,
+    "isLimits": false,
+    "iVRMultipleAcc": null,
+    "hasAccount": true,
+    "field": "availableCash",
+    "fLabel": "withdrawal limits",
+    "fieldLabel": "withdrawal limit",
+    "fieldContentVariable": "showCashAdvances",
+    "hasMultiple": false,
+    "showMessage": true,
+    "accountTypes": [
+      "Checking Account"
+    ],
+    "fieldToUpdate": "availableCash",
+    "fieldName": "availableCash",
+    "accountObject": {
+      "Checking Account": "CHKN",
+      "Savings Account": "SVG",
+      "Credit Card": "CC",
+      "Home Equity Line": "LIN",
+      "Line of Credit": "LIN",
+      "Mortgage": "MRTG",
+      "Auto Loan": "LON",
+      "Home Equity Loan": "LON",
+      "Personal Loan": "LON",
+      "CD": "CD",
+      "IRA": "IRA"
+    },
+    "limitsRequest": "{\"customerId\":1045300,\"accountNumber\":[\"1042345\"]}",
+    "allGetAccountSpecificLimits": [
+      {
+        "customerId": 1045300,
+        "accountNickname": "Joint",
+        "accountName": "Checking Account",
+        "accountType": "Checking Account",
+        "accountNumber": "1042345",
+        "cardName": "Debit Card",
+        "cardType": "",
+        "cardNumber": "1234456778901690",
+        "status": "Active",
+        "balance": 1000,
+        "currency": "USD",
+        "withdrawal": {
+          "limits": {
+            "monthly": {
+              "available": 5000,
+              "maximum": 8000,
+              "spent": 3000
+            },
+            "daily": {
+              "available": 500,
+              "maximum": 800,
+              "spent": 300
+            }
+          },
+          "transactions": {
+            "monthly": {
+              "available": 20,
+              "maximum": 30,
+              "usedup": 10
+            },
+            "daily": {
+              "available": 5,
+              "maximum": 8,
+              "usedup": 3
+            }
+          }
+        },
+        "purchase": {
+          "limits": {
+            "monthly": {
+              "available": 5000,
+              "maximum": 8000,
+              "spent": 3000
+            },
+            "daily": {
+              "available": 500,
+              "maximum": 800,
+              "spent": 300
+            }
+          },
+          "transactions": {
+            "monthly": {
+              "available": 20,
+              "maximum": 30,
+              "usedup": 10
+            },
+            "daily": {
+              "available": 5,
+              "maximum": 8,
+              "usedup": 3
+            }
+          }
+        },
+        "txnsPerDay": {
+          "available": 5,
+          "maximum": 8,
+          "usedup": 3
+        },
+        "perTxn": 500,
+        "availableCashLimit": null,
+        "creditLimit": null,
+        "availableCredit": null,
+        "cashDepositLimit": 12,
+        "id": "78714f9ed99b49fd"
+      }
+    ],
+    "fetchLimits": true,
+    "currLength": 1,
+    "custTotalLength": 1,
+    "1707658084641": [
+      {
+        "nodeId": "getAccountSpecificLimits",
+        "startTime": "2024-02-11T13:28:15.977Z",
+        "endTime": "2024-02-11T13:28:16.032Z"
+      }
+    ],
+    "getAccountSpecificLimits": {
+      "response": {
+        "statusCode": 200,
+        "headers": {
+          "server": "nginx",
+          "date": "Sun, 11 Feb 2024 13:28:16 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "content-length": "941",
+          "connection": "close",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+          "access-control-allow-headers": "Content-Type",
+          "etag": "W/\"3ad-851aJCPu/CiWNAiKde/YnfxbbTs\""
+        }
+      }
+    },
+    "session": {
+      "EnterpriseContext": {},
+      "BotContext": {
+        "usercount": 1
+      },
+      "UserContext": {
+        "workinghours": {
+          "workdays": "mon,tue,wed,thu,fri",
+          "workstart": "8:00 AM",
+          "workend": "5:00 PM"
+        },
+        "profImage": "no-avatar",
+        "jTitle": "",
+        "dept": "",
+        "profColour": "#ff0000",
+        "activationStatus": "active",
+        "emailId": "ganesh.nethula@kore.com",
+        "firstName": "Ganesh",
+        "lastName": "n",
+        "orgId": "o-fe3e71b2-0453-52ea-9c95-50ed5660f886",
+        "_id": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+        "accountId": "587885e8ad6795fd2ecfe372",
+        "identities": [
+          {
+            "val": "ganesh.nethula@kore.com",
+            "type": "email"
+          },
+          {
+            "val": "630dfbeb9b64f063c02e4442/smartassist/63b2914c94360546fbc71ee1",
+            "type": "mapped"
+          },
+          {
+            "val": "630dfbeb9b64f063c02e4442/smartassist/63b2918dbe5e63c018dde8bd",
+            "type": "mapped"
+          }
+        ]
+      },
+      "UserSession": {
+        "loginStatus": "success",
+        "accessToken": "Sm9objoxMTEx",
+        "customerID": "John",
+        "userRemoteAddress": "49.37.135.70"
+      },
+      "BotUserSession": {
+        "authApiPath": "https://demodpd.kore.ai/korebankingtesting/",
+        "mobileNumber": 919832321234,
+        "correlationid": 362283,
+        "devLogin": true,
+        "productCodeDetails": [
+          {
+            "acc": "Checking",
+            "sub": "Regular Checking",
+            "code": "1"
+          }
+        ],
+        "channelType": null,
+        "isIVR": null,
+        "tenantId": null,
+        "source": "kore",
+        "_metaInfo": {},
+        "firstName": "John",
+        "sessionStartTime": 1707657871535,
+        "lastName": "Jones",
+        "intentNotFoundCount": null,
+        "apiPath": "https://demodpd.kore.ai/korebankingtesting/",
+        "loginTimestamp": 1707658089091,
+        "accessToken": "Sm9objoxMTEx",
+        "customerID": 1045300,
+        "loginStatus": "success",
+        "fieldCodes": {
+          "BAL": true,
+          "BAL-CHKN": true,
+          "BAL-CHKN-PB": true,
+          "BAL-CHKN-AB": true,
+          "BAL-SVG": true,
+          "BAL-SVG-PB": true,
+          "BAL-SVG-AB": true,
+          "BAL-CC": true,
+          "BAL-CC-LSTCYCBAL": true,
+          "BAL-CC-TOTBAL": true,
+          "BAL-CC-CURRCYCBAL": true,
+          "BAL-CC-MINDUE": true,
+          "BAL-CC-PPP": true,
+          "BAL-LON": true,
+          "BAL-LON-PRINBAL": true,
+          "BAL-MRTG": true,
+          "BAL-MRTG-PRINBAL": true,
+          "BAL-LIN": true,
+          "BAL-LIN-TOTBAL": true,
+          "BAL-LIN-AVAILCRDT": true,
+          "BAL-IRA": true,
+          "BAL-IRA-OB": true,
+          "SPND": true,
+          "SPND-CHKN": true,
+          "SPND-CHKN-AFFRD": true,
+          "TXN": true,
+          "TXN-CHKN": true,
+          "TXN-CHKN-CHKWITD": true,
+          "TXN-CHKN-BYTYP": true,
+          "TXN-CHKN-BYDTAMNT": true,
+          "TXN-CHKN-PDF": true,
+          "TXN-CHKN-MCC": true,
+          "TXN-CHKN-DESC": true,
+          "TXN-SVG": true,
+          "TXN-SVG-BYTYP": true,
+          "TXN-SVG-BYDTAMNT": true,
+          "TXN-SVG-PDF": true,
+          "TXN-SVG-DESC": true,
+          "TXN-CC": true,
+          "TXN-CC-BYTYP": true,
+          "TXN-CC-BYDTAMNT": true,
+          "TXN-CC-PDF": true,
+          "TXN-CC-MCC": true,
+          "TXN-CC-DESC": true,
+          "TXN-LON": true,
+          "TXN-LON-BYTYP": true,
+          "TXN-LON-BYDTAMNT": true,
+          "TXN-LON-PDF": true,
+          "TXN-LON-DESC": true,
+          "TXN-MRTG": true,
+          "TXN-MRTG-BYTYP": true,
+          "TXN-MRTG-BYDTAMNT": true,
+          "TXN-MRTG-PDF": true,
+          "TXN-MRTG-DESC": true,
+          "TXN-LIN": true,
+          "TXN-LIN-BYTYP": true,
+          "TXN-LIN-BYDTAMNT": true,
+          "TXN-LIN-PDF": true,
+          "TXN-LIN-DESC": true,
+          "ACC": true,
+          "ACC-CHKN": false,
+          "ACC-CHKN-ACCNUM": false,
+          "ACC-CHKN-ROUT": false,
+          "ACC-CHKN-ACCNICK": false,
+          "ACC-CHKN-NAME": false,
+          "ACC-CHKN-ADDR": false,
+          "ACC-CHKN-PHN": false,
+          "ACC-CHKN-EMAIL": false,
+          "ACC-CHKN-ATMWITDLMT": false,
+          "ACC-CHKN-DBTCRDNUM": false,
+          "ACC-CHKN-DBTCRDEXP": false,
+          "ACC-CHKN-ACCSTS": false,
+          "ACC-CHKN-RELSHP": false,
+          "ACC-CHKN-IBAN": false,
+          "ACC-CHKN-CHQBK": false,
+          "ACC-CHKN-MONWITDLMT": false,
+          "ACC-CHKN-MONPURLMT": false,
+          "ACC-CHKN-DLYPURLMT": false,
+          "ACC-CHKN-TXNPERDAY": false,
+          "ACC-CHKN-PERTXNLMT": false,
+          "ACC-SVG": false,
+          "ACC-SVG-ACCNUM": false,
+          "ACC-SVG-ROUT": false,
+          "ACC-SVG-ACCNICK": false,
+          "ACC-SVG-NAME": false,
+          "ACC-SVG-ADDR": false,
+          "ACC-SVG-PHN": true,
+          "ACC-SVG-EMAIL": false,
+          "ACC-SVG-ACCSTS": false,
+          "ACC-SVG-RELSHP": false,
+          "ACC-SVG-IBAN": false,
+          "ACC-CC": false,
+          "ACC-CC-ACCNUM": false,
+          "ACC-CC-EXP": false,
+          "ACC-CC-ACCNICK": false,
+          "ACC-CC-NAME": false,
+          "ACC-CC-ADDR": false,
+          "ACC-CC-PHN": false,
+          "ACC-CC-EMAIL": false,
+          "ACC-CC-CRDTLMT": false,
+          "ACC-CC-ADVLMT": false,
+          "ACC-CC-STMTDT": false,
+          "ACC-CC-DUEDT": false,
+          "ACC-CC-MONWITDLMT": false,
+          "ACC-CC-DLYWITDLMT": false,
+          "ACC-CC-MONPURLMT": false,
+          "ACC-CC-DLYPURLMT": false,
+          "ACC-CC-TXNPERDAY": false,
+          "ACC-CC-PERTXNLMT": false,
+          "ACC-LON": false,
+          "ACC-LON-ACCNUM": false,
+          "ACC-LON-ACCNICK": false,
+          "ACC-LON-NAME": false,
+          "ACC-LON-ADDR": false,
+          "ACC-LON-PHN": false,
+          "ACC-LON-EMAIL": false,
+          "ACC-LON-ORIGAMNT": false,
+          "ACC-LON-ORIGDT": false,
+          "ACC-LON-MATDT": false,
+          "ACC-LON-DUEDT": false,
+          "ACC-LON-PAYOFF": false,
+          "ACC-LON-INTRT": false,
+          "ACC-LON-MONINST": false,
+          "ACC-LON-TENR": false,
+          "ACC-MRTG": false,
+          "ACC-MRTG-ACCNUM": false,
+          "ACC-MRTG-ACCNICK": false,
+          "ACC-MRTG-NAME": false,
+          "ACC-MRTG-ADDR": false,
+          "ACC-MRTG-PHN": false,
+          "ACC-MRTG-EMAIL": false,
+          "ACC-MRTG-PROPADDR": false,
+          "ACC-MRTG-ORIGAMNT": false,
+          "ACC-MRTG-ORIGDT": false,
+          "ACC-MRTG-MATDT": false,
+          "ACC-MRTG-DUEDT": false,
+          "ACC-MRTG-PAYOFF": false,
+          "ACC-LIN": false,
+          "ACC-LIN-ACCNUM": false,
+          "ACC-LIN-ACCNICK": false,
+          "ACC-LIN-NAME": false,
+          "ACC-LIN-ADDR": false,
+          "ACC-LIN-PHN": false,
+          "ACC-LIN-EMAIL": false,
+          "ACC-LIN-TOTLMT": false,
+          "ACC-LIN-LSTDRWDT": false,
+          "ACC-LIN-MONDUEDT": false,
+          "ACC-LIN-MINDUE": false,
+          "ACC-LIN-INT": false,
+          "ACC-LIN-PAYOFF": false,
+          "BAL-CC-AVAILCRDT": true,
+          "BAL-CC-AVAILCSH": true,
+          "BAL-CD": true,
+          "BAL-CD-PB": true,
+          "BAL-IRA-CB": true,
+          "TXN-CD": true,
+          "TXN-CD-BYTYP": true,
+          "TXN-CD-BYDTAMNT": true,
+          "TXN-CD-PDF": true,
+          "TXN-CD-DESC": true,
+          "TXN-IRA": true,
+          "TXN-IRA-BYTYP": true,
+          "TXN-IRA-BYDTAMNT": true,
+          "TXN-IRA-PDF": true,
+          "TXN-IRA-DESC": true,
+          "ACC-CD": false,
+          "ACC-CD-MRTAMNT": false,
+          "ACC-CD-MRTDT": false,
+          "ACC-CD-INTRT": false,
+          "ACC-CD-ACCNUM": false,
+          "ACC-CD-ACCNICK": false,
+          "ACC-CD-NAME": false,
+          "ACC-CD-PHN": false,
+          "ACC-CD-EMAIL": false,
+          "ACC-CD-ADDR": false,
+          "ACC-CD-DEPAMNT": false,
+          "ACC-IRA": false,
+          "ACC-IRA-ACCNUM": false,
+          "ACC-IRA-ACCNICK": false,
+          "ACC-IRA-NAME": false,
+          "ACC-IRA-PHN": false,
+          "ACC-IRA-EMAIL": false,
+          "ACC-IRA-ADDR": false,
+          "CP": true,
+          "CP-CUST": true,
+          "CP-CUST-SEG": true,
+          "CP-CUST-ADDR": true,
+          "CP-CUST-EMAIL": true,
+          "CP-CUST-PHN_MOB": true,
+          "CP-CUST-ALTPHN": true,
+          "CP-CUST-PHN": true,
+          "CP-CUST-ALTPHN_MOB": true,
+          "CP-CUST-PPR_STMT": true,
+          "RM": true,
+          "RM-RELM": true,
+          "RM-RELM-NAME": true,
+          "RM-RELM-PHN": true,
+          "RM-RELM-EMAIL": true,
+          "OB": true,
+          "OB-RP": true,
+          "OB-RP-LOC_PROF": true,
+          "OB-RP-LOC_PROF-MOB_ONL_ID": true,
+          "OB-RP-LOC_PROF-LST_4_SSN": true,
+          "OB-RP-LOC_PROF-FUL_SSN": true,
+          "OB-RP-AUTH_USR": true,
+          "OB-RP-AUTH_USR-CHLNG_QSN": true,
+          "OB-RP-AUTH_USR-OTP": true,
+          "OB-RP-AUTH_USR-CRDNUM_PIN": true,
+          "OB-RP-AUTH_USR-PII": true,
+          "OB-RP-AUTH_USR-PII-DOB": true,
+          "OB-RP-AUTH_USR-PII-SSN": true,
+          "OB-RP-AUTH_USR-PII-PWD": true,
+          "OB-RP-AUTH_USR-PII-LST_DEP": true,
+          "OB-RP-AUTH_USR-PII-ACC_NUM": true,
+          "OB-RP-PWD_FMT": [],
+          "OB-RP-PWD_FMT-SPL_CHAR": [],
+          "RP_PWD_Regex": "Xig/IS4qP1shQCMkJVwqXF5cKFwpJlwtXF9cK1x7XH1cW1xdXHxcOyciOlw8XD5cLFwuXD9dKS57NCwyMH0k",
+          "OB-RP-PWD_FMT-MIN_LEN": [
+            "4"
+          ],
+          "OB-RP-PWD_FMT-MAX_LEN": [
+            "20"
+          ],
+          "OB-RP-PWD_FMT-ONE_CAP": true,
+          "OB-RP-PWD_FMT-ONE_LWR": true,
+          "OB-RP-PWD_FMT-ONE_NUM": true,
+          "OB-RP-PWD_FMT-SEQ_NUM": true,
+          "OB-RP-PWD_FMT-ALLW_OLD": true,
+          "OB-CL": true,
+          "OB-CL-LO": true,
+          "OB-CL-LO-WEB": true,
+          "OB-CL-LO-WEB-MOB_ONL_ID": true,
+          "OB-CL-LO-WEB-MOB_ONL_ID-CHLNG_QSNS": true,
+          "OB-CL-LO-WEB-OTP": true,
+          "OB-CL-LO-WEB-CRDNUM_PIN": true,
+          "OB-CL-LO-WEB-PII": true,
+          "OB-CL-LO-WEB-PII-DOB": true,
+          "OB-CL-LO-WEB-PII-SSN": true,
+          "OB-CL-LO-WEB-PII-PWD": true,
+          "OB-CL-LO-WEB-LST_DEP": true,
+          "OB-CL-LO-WEB-ACC_NUM": true,
+          "OB-CL-LO-IVR": true,
+          "OB-CL-LO-IVR-MOB_ONL_ID": true,
+          "OB-CL-LO-IVR-MOB_ONL_ID-CHLNG_QSNS": true,
+          "OB-CL-LO-IVR-OTP": true,
+          "OB-CL-LO-IVR-CRDNUM_PIN": true,
+          "OB-CL-LO-IVR-PII": true,
+          "OB-CL-LO-IVR-PII-DOB": true,
+          "OB-CL-LO-IVR-PII-SSN": true,
+          "OB-CL-LO-IVR-PII-PWD": true,
+          "OB-CL-LO-IVR-LST_DEP": true,
+          "OB-CL-LO-IVR-ACC_NUM": true,
+          "OB-CL-LO-SMS": true,
+          "OB-CL-LO-SMS-MOB_ONL_ID": true,
+          "OB-CL-LO-SMS-MOB_ONL_ID-CHLNG_QSNS": true,
+          "OB-CL-LO-SMS-OTP": true,
+          "OB-CL-LO-SMS-CRDNUM_PIN": true,
+          "OB-CL-LO-SMS-PII": true,
+          "OB-CL-LO-SMS-PII-DOB": true,
+          "OB-CL-LO-SMS-PII-SSN": true,
+          "OB-CL-LO-SMS-PII-PWD": true,
+          "OB-CL-LO-SMS-LST_DEP": true,
+          "OB-CL-LO-SMS-ACC_NUM": true,
+          "OB-UNLCKHMBNK": true,
+          "OB-UNLCKHMBNK-RP": true,
+          "OB-UNLCKHMBNK-OTP": true,
+          "OB-UNLCKHMBNK-PII": true,
+          "OB-UNLCKHMBNK-PII-OPONE": true,
+          "OB-UNLCKHMBNK-PII-OPONE-MOB_ONL_ID": true,
+          "OB-UNLCKHMBNK-PII-OPONE-SSN": true,
+          "OB-UNLCKHMBNK-PII-OPONE-ACC_NUM": true,
+          "OB-UNLCKHMBNK-PII-OPONE-DOB": true,
+          "OB-UNLCKHMBNK-PII-OPONE-ZIP": true,
+          "OB-UNLCKHMBNK-PII-OPONE-STRTNUM": true,
+          "OB-UNLCKHMBNK-PII-OPTWO": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-MOB_ONL_ID": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-SSN": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-ACC_NUM": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-DOB": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-ZIP": true,
+          "OB-UNLCKHMBNK-PII-OPTWO-STRTNUM": true,
+          "OB-UNLCKHMBNK-PII-OPTHR": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-MOB_ONL_ID": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-SSN": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-ACC_NUM": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-DOB": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-ZIP": true,
+          "OB-UNLCKHMBNK-PII-OPTHR-STRTNUM": true,
+          "ACC-SVG-TXNPERDAY": false,
+          "ACC-SVG-PERTXNLMT": false,
+          "ACC-SVG-MONPURLMT": false,
+          "ACC-SVG-MONWITDLMT": false,
+          "ACC-SVG-DLYPURLMT": false,
+          "ACC-SVG-ATMWITDLMT": false
+        },
+        "isReturningUser": true,
+        "tagEmitted": true,
+        "authType": "Basic",
+        "prodDetails": "{\"productCodes\":[{\"acc\":\"Checking\",\"sub\":\"Regular Checking\",\"code\":\"1\"}]}",
+        "previousSubIntent": [
+          "DBTDLY_ATM_WDLAMT_LMT"
+        ],
+        "lastMessage": {
+          "channel": "rtm",
+          "messagePayload": {
+            "clientMessageId": 1707658084641,
+            "message": {
+              "body": "1111"
+            },
+            "resourceid": "/bot.message",
+            "isDebugging": true,
+            "botInfo": {
+              "chatBot": "Banking Virtual Assistant",
+              "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+              "botType": "default",
+              "hostDomain": "https://bots.kore.ai",
+              "os": "Windows",
+              "device": "Other"
+            },
+            "client": "botbuilder",
+            "meta": {
+              "timezone": "Asia/Kolkata",
+              "locale": "en-US",
+              "location": {
+                "city": "",
+                "country": "",
+                "latitude": 17.4882036,
+                "longitude": 78.3318147,
+                "street": ""
+              }
+            },
+            "id": 1707658084641
+          }
+        },
+        "subIntent": "DBTDLY_ATM_WDLAMT_LMT",
+        "customerName": "John",
+        "vendor": {},
+        "subsource": "kore",
+        "ubBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+        "client": "kore",
+        "accountId": "12345678",
+        "usecase": "Get Debit card Daily ATM withdrawal amount limit",
+        "preEOD": null,
+        "bankBaseURL": null,
+        "isPhoneIdWebLogin": "false",
+        "ubUserId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+        "IntentCode": "ID_dbtdly_atm_wdlamt_lmt",
+        "useCase": "Get Debit card Daily ATM withdrawal amount limit",
+        "isDemo": false,
+        "inputAccount": true,
+        "channels": [
+          {
+            "type": "rtm",
+            "from": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+            "botInfo": {
+              "chatBot": "Banking Virtual Assistant",
+              "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+              "botType": "default",
+              "hostDomain": "https://bots.kore.ai",
+              "os": "Windows",
+              "device": "Other"
+            },
+            "handle": {
+              "handleId": "6e01cf76-2b07-4193-a90f-3765acbf77bc",
+              "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+              "clientId": "5a37bf24-fea0-4e6b-a816-f9602db08149",
+              "taskBotId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+              "traceId": "f142ead2d4409419",
+              "spanId": "f142ead2d4409419",
+              "trace": {}
+            },
+            "client": "botbuilder",
+            "body": "1111",
+            "enable": true,
+            "isAlertsEnabled": false,
+            "message": "The bot is disabled via Web/Mobile Client. You can still talk to the bot via Web/Mobile Client, Webhook, Ivr Inst F 7766542 C 2 A 8 568 E 8686 20067 Fc 3 B 713, Ivr Inst Dd 53 D 961 Da 1 E 516 B 9692 C 0 Ff 57978 D 3 E, AudioCodes.",
+            "activeChannels": "Web/Mobile Client,Webhook,Ivr Inst F 7766542 C 2 A 8 568 E 8686 20067 Fc 3 B 713,Ivr Inst Dd 53 D 961 Da 1 E 516 B 9692 C 0 Ff 57978 D 3 E,AudioCodes.",
+            "streamId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8",
+            "tokens": [],
+            "__userInputTime": "2024-02-11T13:28:05.348Z",
+            "__loopCount": 0,
+            "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+            "requestId": "ms-21a7e4f5-e230-5b4c-aaa1-d5638492af10",
+            "botLanguage": "en",
+            "requestContext": {
+              "isRuntime": true,
+              "isBB": true
+            },
+            "sessionId": "65c8ca899e7ecc6aeced28f9"
+          }
+        ],
+        "lastUserMessageTime": "2024-02-11T13:28:05.405Z",
+        "koreApiPath": "https://demodpd.kore.ai/korebankingtesting/",
+        "conversationSessionId": "65c8ca899e7ecc6aeced28f9",
+        "externalAccountsEnabled": false
+      },
+      "opts": {
+        "userId": "u-bc180960-070f-5d70-94ad-133b44e6f0dd",
+        "streamId": "st-09dd5d74-d2ba-51a4-96a0-4c254ab117b8"
+      },
+      "deleteKeys": {}
+    },
+    "isScriptEOD": true
+  },
+  "metaTags": {
+    "UserLevelTags": [],
+    "SessionLevelTags": [],
+    "MessageLevelTags": [
+      {
+        "name": "UseCaseStarted",
+        "value": "Get Accounts and Card Limits"
+      }
+    ],
+    "referenceLevelTags": []
+  },
+  "contextTags": [
+    "Get Accounts and Card Limits",
+    "viewLimits",
+    "Logmein",
+    "Capture Account Data",
+    "captureAccountData"
+  ],
+  "removeContextTags": [],
+  "debugLogs": [],
+  "textTranslations": [],
+  "tokenIdpsToExpire": [],
+  "clearAllAuthTokens": false,
+  "isDeveloper": true,
+  "debugMessage": "IntentValidation_GACL",
+  "requestId": "ms-21a7e4f5-e230-5b4c-aaa1-d5638492af10",
+  "contextId": "dcx-ca20772a-d73b-54d8-81f5-103829fa7892"
+}
