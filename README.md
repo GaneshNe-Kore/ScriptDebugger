@@ -43,7 +43,7 @@ This document outlines a systematic approach to debugging script nodes within th
 ## Steps to Debugging
 
 1. **Identify the Issue:**
-   - Pinpoint the script node that is failing within the "Get Account Balance" dialog.
+   - Pinpoint the script node that is failing within the dialog.
 
 2. **Execute the Bot:**
    - Run the bot with any utterance that qualifies for getting the balance.
